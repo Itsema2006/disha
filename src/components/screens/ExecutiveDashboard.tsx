@@ -92,7 +92,7 @@ export const ExecutiveDashboard: React.FC = () => {
     <div className="space-y-6 animate-fadeIn">
       {/* Header Banner & Quick Actions */}
       <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-cyan-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
-        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-white/5 backdrop-blur-3xl -skew-x-12 transform translate-x-12"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-white/5 backdrop-blur-3xl -skew-x-12 transform trangray-x-12"></div>
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 text-emerald-200 text-xs font-medium mb-2 border border-white/10">
@@ -147,12 +147,12 @@ export const ExecutiveDashboard: React.FC = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         
         {/* Appointments Today */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('appointments')}>
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('appointments')}>
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Appointments Today</span>
             <Calendar className="w-4 h-4 text-emerald-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{totalAppointments}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{totalAppointments}</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium flex items-center gap-1">
             <ArrowUpRight className="w-3 h-3" />
             <span>+14% vs yesterday</span>
@@ -160,77 +160,77 @@ export const ExecutiveDashboard: React.FC = () => {
         </div>
 
         {/* Completed Appointments */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all">
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-emerald-300 transition-all">
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Completed</span>
             <CheckCircle2 className="w-4 h-4 text-emerald-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{completedApts}</div>
-          <div className="mt-1 text-[11px] text-slate-500 font-medium">Tests processed</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{completedApts}</div>
+          <div className="mt-1 text-[11px] text-gray-500 font-medium">Tests processed</div>
         </div>
 
         {/* Pending Appointments */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-amber-300 transition-all">
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-amber-300 transition-all">
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Pending / Confirmed</span>
             <Clock className="w-4 h-4 text-amber-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{pendingApts}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{pendingApts}</div>
           <div className="mt-1 text-[11px] text-amber-600 font-medium">Awaiting patient arrival</div>
         </div>
 
         {/* Cancelled Appointments */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-rose-300 transition-all">
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-rose-300 transition-all">
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Cancelled</span>
             <XCircle className="w-4 h-4 text-rose-500" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{cancelledApts}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{cancelledApts}</div>
           <div className="mt-1 text-[11px] text-rose-500 font-medium">Low (4.2% rate)</div>
         </div>
 
         {/* Reports Pending */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-purple-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-purple-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Reports Pending</span>
             <FileText className="w-4 h-4 text-purple-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{reportsPending}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{reportsPending}</div>
           <div className="mt-1 text-[11px] text-purple-600 font-medium">Under Pathologist Review</div>
         </div>
 
         {/* Reports Delivered */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-cyan-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-cyan-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>Reports Delivered</span>
             <FileText className="w-4 h-4 text-cyan-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{reportsDelivered}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{reportsDelivered}</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium">Via WhatsApp & Portal</div>
         </div>
 
         {/* AI Calls Handled */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('ai_receptionist')}>
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('ai_receptionist')}>
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>AI Calls Handled</span>
             <PhoneCall className="w-4 h-4 text-emerald-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">{totalCalls}</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">{totalCalls}</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium">{aiEfficiencyRate}% Resolution Rate</div>
         </div>
 
         {/* WhatsApp Conversations */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('whatsapp')}>
-          <div className="flex items-center justify-between text-slate-500 text-xs">
+        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('whatsapp')}>
+          <div className="flex items-center justify-between text-gray-500 text-xs">
             <span>WhatsApp Sent</span>
             <MessageSquare className="w-4 h-4 text-emerald-600" />
           </div>
-          <div className="mt-2 text-2xl font-bold text-slate-900">194</div>
+          <div className="mt-2 text-2xl font-bold text-gray-900">194</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium">99.2% Delivery Rate</div>
         </div>
 
         {/* Revenue Summary (Role Guarded) */}
-        <div className="col-span-2 bg-gradient-to-tr from-slate-900 to-slate-800 text-white p-4 rounded-xl shadow-md border border-slate-700 flex items-center justify-between">
+        <div className="col-span-2 bg-gradient-to-tr from-gray-900 to-gray-800 text-white p-4 rounded-xl shadow-md border border-gray-700 flex items-center justify-between">
           <div>
             <div className="flex items-center gap-1 text-xs text-emerald-400 font-semibold">
               <IndianRupee className="w-3.5 h-3.5" />
@@ -262,11 +262,11 @@ export const ExecutiveDashboard: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         {/* Appointment & Patient Trend Line Graph (Custom SVG Visualization) */}
-        <div className="lg:col-span-8 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+        <div className="lg:col-span-8 bg-white p-6 rounded-2xl border border-gray-200 shadow-xs space-y-4">
           <div className="flex items-center justify-between">
             <div>
-              <h3 className="font-bold text-slate-900 text-sm">Appointment & Diagnostic Patient Trend</h3>
-              <p className="text-slate-500 text-xs">Hourly distribution of patient arrivals and AI voice bookings today in Kolhapur.</p>
+              <h3 className="font-bold text-gray-900 text-sm">Appointment & Diagnostic Patient Trend</h3>
+              <p className="text-gray-500 text-xs">Hourly distribution of patient arrivals and AI voice bookings today in Kolhapur.</p>
             </div>
             <div className="flex items-center gap-3 text-xs">
               <span className="flex items-center gap-1.5 font-medium text-emerald-700">
@@ -328,7 +328,7 @@ export const ExecutiveDashboard: React.FC = () => {
             </svg>
 
             {/* X Axis Labels */}
-            <div className="flex justify-between text-[10px] text-slate-400 mt-2 font-mono">
+            <div className="flex justify-between text-[10px] text-gray-400 mt-2 font-mono">
               <span>08:00 AM</span>
               <span>10:00 AM</span>
               <span>12:00 PM</span>
@@ -340,21 +340,21 @@ export const ExecutiveDashboard: React.FC = () => {
         </div>
 
         {/* AI Voice Call Statistics Widget */}
-        <div className="lg:col-span-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+        <div className="lg:col-span-4 bg-white p-6 rounded-2xl border border-gray-200 shadow-xs space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-bold text-slate-900 text-sm">AI Receptionist Performance</h3>
+            <h3 className="font-bold text-gray-900 text-sm">AI Receptionist Performance</h3>
             <span className="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">
               99.8% Uptime
             </span>
           </div>
 
           <div className="space-y-3 text-xs">
-            <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+            <div className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-between">
               <div>
-                <div className="font-semibold text-slate-800">Total Calls Today</div>
-                <div className="text-[11px] text-slate-500">84 calls processed</div>
+                <div className="font-semibold text-gray-800">Total Calls Today</div>
+                <div className="text-[11px] text-gray-500">84 calls processed</div>
               </div>
-              <span className="font-bold text-slate-900 text-sm">84</span>
+              <span className="font-bold text-gray-900 text-sm">84</span>
             </div>
 
             <div className="p-3 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center justify-between">
@@ -376,7 +376,7 @@ export const ExecutiveDashboard: React.FC = () => {
             <div className="pt-2 text-center">
               <button
                 onClick={() => setActiveModule('ai_receptionist')}
-                className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-1.5"
+                className="w-full py-2 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-1.5"
               >
                 <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Open Dedicated AI Calling Page</span>
@@ -391,11 +391,11 @@ export const ExecutiveDashboard: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         {/* Recent Appointments Table */}
-        <div className="lg:col-span-8 bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
-          <div className="p-4 border-b border-slate-100 flex items-center justify-between">
+        <div className="lg:col-span-8 bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden">
+          <div className="p-4 border-b border-gray-100 flex items-center justify-between">
             <div>
-              <h3 className="font-bold text-slate-900 text-sm">Recent Appointments</h3>
-              <p className="text-slate-500 text-xs">Today's patient schedule at Tarabai Park centre</p>
+              <h3 className="font-bold text-gray-900 text-sm">Recent Appointments</h3>
+              <p className="text-gray-500 text-xs">Today's patient schedule at Tarabai Park centre</p>
             </div>
             <button
               onClick={() => setActiveModule('appointments')}
@@ -408,7 +408,7 @@ export const ExecutiveDashboard: React.FC = () => {
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs">
-              <thead className="bg-slate-50 text-slate-500 font-semibold uppercase text-[10px] border-b border-slate-100">
+              <thead className="bg-gray-50 text-gray-500 font-semibold uppercase text-[10px] border-b border-gray-100">
                 <tr>
                   <th className="p-3">Patient</th>
                   <th className="p-3">Test / Service</th>
@@ -418,17 +418,17 @@ export const ExecutiveDashboard: React.FC = () => {
                   <th className="p-3 text-right">Action</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 text-slate-700 font-medium">
+              <tbody className="divide-y divide-gray-100 text-gray-700 font-medium">
                 {appointments.slice(0, 5).map(apt => (
-                  <tr key={apt.id} className="hover:bg-slate-50/80 transition-colors">
-                    <td className="p-3 font-semibold text-slate-900">
+                  <tr key={apt.id} className="hover:bg-gray-50/80 transition-colors">
+                    <td className="p-3 font-semibold text-gray-900">
                       <div>{apt.patientName}</div>
-                      <div className="text-[10px] text-slate-400 font-normal">{apt.phone}</div>
+                      <div className="text-[10px] text-gray-400 font-normal">{apt.phone}</div>
                     </td>
-                    <td className="p-3 text-slate-800">{apt.testName}</td>
-                    <td className="p-3 text-slate-600">{apt.timeSlot}</td>
+                    <td className="p-3 text-gray-800">{apt.testName}</td>
+                    <td className="p-3 text-gray-600">{apt.timeSlot}</td>
                     <td className="p-3">
-                      <span className="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                      <span className="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-gray-100 text-gray-700 border border-gray-200">
                         {apt.createdVia}
                       </span>
                     </td>
@@ -458,10 +458,10 @@ export const ExecutiveDashboard: React.FC = () => {
         </div>
 
         {/* Recent Patient Activity Feed */}
-        <div className="lg:col-span-4 bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+        <div className="lg:col-span-4 bg-white p-5 rounded-2xl border border-gray-200 shadow-xs space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-bold text-slate-900 text-sm">Live Patient Activity</h3>
-            <span className="text-[10px] text-slate-400">Real-time</span>
+            <h3 className="font-bold text-gray-900 text-sm">Live Patient Activity</h3>
+            <span className="text-[10px] text-gray-400">Real-time</span>
           </div>
 
           <div className="space-y-3 text-xs">
@@ -470,9 +470,9 @@ export const ExecutiveDashboard: React.FC = () => {
                 WA
               </div>
               <div>
-                <p className="text-slate-800 font-medium">Diagnostic Report Delivered</p>
-                <p className="text-[11px] text-slate-500">Report #DDC/2026/09/RX221 sent via WhatsApp to Rohan Joshi.</p>
-                <span className="text-[10px] text-slate-400">2 mins ago</span>
+                <p className="text-gray-800 font-medium">Diagnostic Report Delivered</p>
+                <p className="text-[11px] text-gray-500">Report #DDC/2026/09/RX221 sent via WhatsApp to Rohan Joshi.</p>
+                <span className="text-[10px] text-gray-400">2 mins ago</span>
               </div>
             </div>
 
@@ -481,9 +481,9 @@ export const ExecutiveDashboard: React.FC = () => {
                 AI
               </div>
               <div>
-                <p className="text-slate-800 font-medium">New Call Handled by AI</p>
-                <p className="text-[11px] text-slate-500">Prakash Patil inquired about Senior Citizen checkup pricing.</p>
-                <span className="text-[10px] text-slate-400">18 mins ago</span>
+                <p className="text-gray-800 font-medium">New Call Handled by AI</p>
+                <p className="text-[11px] text-gray-500">Prakash Patil inquired about Senior Citizen checkup pricing.</p>
+                <span className="text-[10px] text-gray-400">18 mins ago</span>
               </div>
             </div>
 
@@ -492,9 +492,9 @@ export const ExecutiveDashboard: React.FC = () => {
                 MD
               </div>
               <div>
-                <p className="text-slate-800 font-medium">Report Verified by Pathologist</p>
-                <p className="text-[11px] text-slate-500">Dr. Rajesh Mehta approved Thyroid profile for Sunita Patil.</p>
-                <span className="text-[10px] text-slate-400">35 mins ago</span>
+                <p className="text-gray-800 font-medium">Report Verified by Pathologist</p>
+                <p className="text-[11px] text-gray-500">Dr. Rajesh Mehta approved Thyroid profile for Sunita Patil.</p>
+                <span className="text-[10px] text-gray-400">35 mins ago</span>
               </div>
             </div>
           </div>
@@ -504,42 +504,42 @@ export const ExecutiveDashboard: React.FC = () => {
 
       {/* Book Appointment Modal */}
       {showAddAptModal && (
-        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fadeIn">
-          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
-            <h3 className="font-bold text-slate-900 text-base mb-1">Book New Diagnostic Appointment</h3>
-            <p className="text-slate-500 text-xs mb-4">Creates appointment and sends instant WhatsApp confirmation voucher.</p>
+        <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fadeIn">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-200">
+            <h3 className="font-bold text-gray-900 text-base mb-1">Book New Diagnostic Appointment</h3>
+            <p className="text-gray-500 text-xs mb-4">Creates appointment and sends instant WhatsApp confirmation voucher.</p>
 
             <form onSubmit={handleBookAptSubmit} className="space-y-3 text-xs">
               <div>
-                <label className="block text-slate-700 font-semibold mb-1">Patient Full Name</label>
+                <label className="block text-gray-700 font-semibold mb-1">Patient Full Name</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. Ramesh Kadam"
                   value={newPatientName}
                   onChange={e => setNewPatientName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full p-2.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
               <div>
-                <label className="block text-slate-700 font-semibold mb-1">Mobile Phone (+91)</label>
+                <label className="block text-gray-700 font-semibold mb-1">Mobile Phone (+91)</label>
                 <input
                   type="text"
                   required
                   placeholder="+91 98220 12345"
                   value={newPhone}
                   onChange={e => setNewPhone(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full p-2.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
               <div>
-                <label className="block text-slate-700 font-semibold mb-1">Diagnostic Test / Service</label>
+                <label className="block text-gray-700 font-semibold mb-1">Diagnostic Test / Service</label>
                 <select
                   value={newTestName}
                   onChange={e => setNewTestName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none bg-white"
+                  className="w-full p-2.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none bg-white"
                 >
                   <option value="CBC + Fasting Glucose">CBC + Fasting Glucose (₹1,450)</option>
                   <option value="Comprehensive Lipid Profile">Comprehensive Lipid Profile (₹1,200)</option>
@@ -552,7 +552,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setShowAddAptModal(false)}
-                  className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-medium"
+                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium"
                 >
                   Cancel
                 </button>
@@ -570,33 +570,33 @@ export const ExecutiveDashboard: React.FC = () => {
 
       {/* Add Patient Modal */}
       {showAddPatientModal && (
-        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fadeIn">
-          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
-            <h3 className="font-bold text-slate-900 text-base mb-1">Register New Patient</h3>
-            <p className="text-slate-500 text-xs mb-4">Add patient record to Disha Diagnostic database.</p>
+        <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fadeIn">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-200">
+            <h3 className="font-bold text-gray-900 text-base mb-1">Register New Patient</h3>
+            <p className="text-gray-500 text-xs mb-4">Add patient record to Disha Diagnostic database.</p>
 
             <form onSubmit={handleAddPatientSubmit} className="space-y-3 text-xs">
               <div>
-                <label className="block text-slate-700 font-semibold mb-1">Patient Full Name</label>
+                <label className="block text-gray-700 font-semibold mb-1">Patient Full Name</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. Swati Pawar"
                   value={newPatientName}
                   onChange={e => setNewPatientName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full p-2.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
               <div>
-                <label className="block text-slate-700 font-semibold mb-1">Mobile Phone Number</label>
+                <label className="block text-gray-700 font-semibold mb-1">Mobile Phone Number</label>
                 <input
                   type="text"
                   required
                   placeholder="+91 98220 99887"
                   value={newPhone}
                   onChange={e => setNewPhone(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full p-2.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
@@ -604,7 +604,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setShowAddPatientModal(false)}
-                  className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-medium"
+                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium"
                 >
                   Cancel
                 </button>

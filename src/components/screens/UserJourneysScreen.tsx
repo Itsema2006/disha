@@ -10,13 +10,13 @@ export const UserJourneysScreen: React.FC = () => {
   return (
     <div className="space-y-6 animate-fadeIn">
       {/* Header */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <Compass className="w-5 h-5 text-emerald-600" />
-            <h2 className="text-xl font-bold text-slate-900">Role-to-Screen Guided User Journeys</h2>
+            <h2 className="text-xl font-bold text-gray-900">Role-to-Screen Guided User Journeys</h2>
           </div>
-          <p className="text-slate-500 text-xs mt-0.5">
+          <p className="text-gray-500 text-xs mt-0.5">
             Step-by-step interactive walkthrough runners for all 7 staff & patient roles outlined in spec.
           </p>
         </div>
@@ -35,7 +35,7 @@ export const UserJourneysScreen: React.FC = () => {
             <div 
               key={j.role}
               className={`bg-white p-6 rounded-2xl border shadow-xs transition-all flex flex-col justify-between space-y-4 ${
-                isCurrentActive ? 'border-amber-400 ring-2 ring-amber-300 shadow-md' : 'border-slate-200 hover:border-emerald-300'
+                isCurrentActive ? 'border-amber-400 ring-2 ring-amber-300 shadow-md' : 'border-gray-200 hover:border-emerald-300'
               }`}
             >
               <div>
@@ -50,19 +50,19 @@ export const UserJourneysScreen: React.FC = () => {
                   )}
                 </div>
 
-                <h3 className="font-bold text-slate-900 text-base mt-2">{j.title}</h3>
-                <p className="text-slate-500 text-xs mt-1">{j.steps.length} sequential workflow steps.</p>
+                <h3 className="font-bold text-gray-900 text-base mt-2">{j.title}</h3>
+                <p className="text-gray-500 text-xs mt-1">{j.steps.length} sequential workflow steps.</p>
 
                 {/* Steps List */}
-                <div className="mt-4 space-y-2 border-t border-slate-100 pt-3">
+                <div className="mt-4 space-y-2 border-t border-gray-100 pt-3">
                   {j.steps.map((s, idx) => (
                     <div key={idx} className="flex items-start gap-2 text-xs">
-                      <span className="w-5 h-5 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">
+                      <span className="w-5 h-5 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">
                         {s.stepNumber}
                       </span>
                       <div>
-                        <div className="font-semibold text-slate-800">{s.title}</div>
-                        <div className="text-[11px] text-slate-500">{s.description}</div>
+                        <div className="font-semibold text-gray-800">{s.title}</div>
+                        <div className="text-[11px] text-gray-500">{s.description}</div>
                       </div>
                     </div>
                   ))}

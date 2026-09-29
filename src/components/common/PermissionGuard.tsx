@@ -15,7 +15,7 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
 
   if (permission === 'none') {
     return (
-      <div className="p-8 max-w-4xl mx-auto my-12 bg-white rounded-2xl border border-slate-200 shadow-xl text-center animate-fadeIn">
+      <div className="p-8 max-w-4xl mx-auto my-12 bg-white rounded-2xl border border-gray-200 shadow-xl text-center animate-fadeIn">
         <div className="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-600 mx-auto mb-4 shadow-inner">
           <Lock className="w-8 h-8" />
         </div>
@@ -24,20 +24,20 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
           HTTP 403 Forbidden • Access Restricted
         </div>
 
-        <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
+        <h2 className="text-2xl font-bold text-gray-900 tracking-tight">
           You don't have permission to access this section
         </h2>
 
-        <p className="text-slate-600 text-sm max-w-lg mx-auto mt-2 leading-relaxed">
-          The current logged-in role <strong className="text-slate-900 font-semibold">{currentUser.roleTitle} ({currentRole})</strong> is restricted from accessing the <strong className="capitalize text-slate-900 font-semibold">{module.replace('_', ' ')}</strong> module based on Disha Diagnostic Centre security policy.
+        <p className="text-gray-600 text-sm max-w-lg mx-auto mt-2 leading-relaxed">
+          The current logged-in role <strong className="text-gray-900 font-semibold">{currentUser.roleTitle} ({currentRole})</strong> is restricted from accessing the <strong className="capitalize text-gray-900 font-semibold">{module.replace('_', ' ')}</strong> module based on Disha Diagnostic Centre security policy.
         </p>
 
-        <div className="mt-6 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-600 max-w-md mx-auto text-left space-y-2">
-          <div className="flex items-center gap-2 text-slate-800 font-semibold">
+        <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-600 max-w-md mx-auto text-left space-y-2">
+          <div className="flex items-center gap-2 text-gray-800 font-semibold">
             <KeyRound className="w-4 h-4 text-emerald-600" />
             <span>Authorized Roles for this module:</span>
           </div>
-          <p className="text-slate-500">
+          <p className="text-gray-500">
             Owner/Admin, Operations Manager or relevant departmental staff. Contact your administrator if access is required.
           </p>
         </div>
@@ -45,7 +45,7 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={() => setActiveModule('dashboard')}
-            className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
+            className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Return to Dashboard</span>

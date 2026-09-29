@@ -75,11 +75,11 @@ export const PatientPortal: React.FC = () => {
       </div>
 
       {/* Mobile Portal Navigation Tabs */}
-      <div className="bg-white p-1.5 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-around text-xs font-semibold">
+      <div className="bg-white p-1.5 rounded-2xl border border-gray-200 shadow-xs flex items-center justify-around text-xs font-semibold">
         <button
           onClick={() => setActiveTab('dashboard')}
           className={`flex-1 py-2 rounded-xl transition-all ${
-            activeTab === 'dashboard' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:bg-slate-100'
+            activeTab === 'dashboard' ? 'bg-emerald-600 text-white shadow-xs' : 'text-gray-600 hover:bg-gray-100'
           }`}
         >
           Home
@@ -87,7 +87,7 @@ export const PatientPortal: React.FC = () => {
         <button
           onClick={() => setActiveTab('book')}
           className={`flex-1 py-2 rounded-xl transition-all ${
-            activeTab === 'book' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:bg-slate-100'
+            activeTab === 'book' ? 'bg-emerald-600 text-white shadow-xs' : 'text-gray-600 hover:bg-gray-100'
           }`}
         >
           Book Test
@@ -95,7 +95,7 @@ export const PatientPortal: React.FC = () => {
         <button
           onClick={() => setActiveTab('reports')}
           className={`flex-1 py-2 rounded-xl transition-all ${
-            activeTab === 'reports' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:bg-slate-100'
+            activeTab === 'reports' ? 'bg-emerald-600 text-white shadow-xs' : 'text-gray-600 hover:bg-gray-100'
           }`}
         >
           My Reports
@@ -114,8 +114,8 @@ export const PatientPortal: React.FC = () => {
               <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold">
                 <Plus className="w-4 h-4" />
               </div>
-              <div className="font-bold text-slate-900 text-xs mt-2">Book Appointment</div>
-              <div className="text-[10px] text-slate-500">Select test & timing</div>
+              <div className="font-bold text-gray-900 text-xs mt-2">Book Appointment</div>
+              <div className="text-[10px] text-gray-500">Select test & timing</div>
             </button>
 
             <button
@@ -125,28 +125,28 @@ export const PatientPortal: React.FC = () => {
               <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold">
                 <FileText className="w-4 h-4" />
               </div>
-              <div className="font-bold text-slate-900 text-xs mt-2">View Diagnostic Reports</div>
-              <div className="text-[10px] text-slate-500">Download PDF instantly</div>
+              <div className="font-bold text-gray-900 text-xs mt-2">View Diagnostic Reports</div>
+              <div className="text-[10px] text-gray-500">Download PDF instantly</div>
             </button>
           </div>
 
           {/* Upcoming Appointment Card */}
           {upcomingApt && (
-            <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs space-y-2">
+            <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-xs space-y-2">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-slate-900">Upcoming Appointment</span>
+                <span className="font-bold text-gray-900">Upcoming Appointment</span>
                 <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">
                   {upcomingApt.status}
                 </span>
               </div>
 
-              <div className="p-3 bg-slate-50 rounded-xl space-y-1 text-xs border border-slate-100">
-                <div className="font-bold text-slate-900">{upcomingApt.testName}</div>
-                <div className="text-slate-600 flex items-center gap-1.5 text-[11px]">
+              <div className="p-3 bg-gray-50 rounded-xl space-y-1 text-xs border border-gray-100">
+                <div className="font-bold text-gray-900">{upcomingApt.testName}</div>
+                <div className="text-gray-600 flex items-center gap-1.5 text-[11px]">
                   <Clock className="w-3.5 h-3.5 text-emerald-600" />
                   <span>{upcomingApt.dateTime} at {upcomingApt.timeSlot}</span>
                 </div>
-                <div className="text-slate-500 text-[10px]">Doctor: {upcomingApt.doctorName}</div>
+                <div className="text-gray-500 text-[10px]">Doctor: {upcomingApt.doctorName}</div>
               </div>
 
               <div className="text-[11px] text-emerald-700 bg-emerald-50 p-2 rounded-lg font-medium border border-emerald-100">
@@ -156,13 +156,13 @@ export const PatientPortal: React.FC = () => {
           )}
 
           {/* Diagnostic Centre Contact Card */}
-          <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs text-xs space-y-2">
-            <h4 className="font-bold text-slate-900">Disha Diagnostic Centre Kolhapur</h4>
-            <div className="flex items-center gap-2 text-slate-600 text-[11px]">
+          <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-xs text-xs space-y-2">
+            <h4 className="font-bold text-gray-900">Disha Diagnostic Centre Kolhapur</h4>
+            <div className="flex items-center gap-2 text-gray-600 text-[11px]">
               <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
               <span>Tarabai Park, Opp. District Court, Kolhapur</span>
             </div>
-            <div className="flex items-center gap-2 text-slate-600 text-[11px]">
+            <div className="flex items-center gap-2 text-gray-600 text-[11px]">
               <PhoneCall className="w-4 h-4 text-emerald-600 shrink-0" />
               <span>Call Centre: +91 0231 2654321 / +91 98220 11111</span>
             </div>
@@ -172,16 +172,16 @@ export const PatientPortal: React.FC = () => {
 
       {/* Tab 2: Book Appointment */}
       {activeTab === 'book' && (
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-4">
-          <h3 className="font-bold text-slate-900 text-sm">Book Diagnostic Test</h3>
+        <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs space-y-4">
+          <h3 className="font-bold text-gray-900 text-sm">Book Diagnostic Test</h3>
 
           <form onSubmit={handleBookSubmit} className="space-y-3 text-xs">
             <div>
-              <label className="block text-slate-700 font-semibold mb-1">Select Test Package</label>
+              <label className="block text-gray-700 font-semibold mb-1">Select Test Package</label>
               <select
                 value={testName}
                 onChange={e => setTestName(e.target.value)}
-                className="w-full p-2.5 border border-slate-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full p-2.5 border border-gray-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-emerald-500"
               >
                 <option value="CBC + HbA1c & Fasting Glucose">CBC + Fasting Glucose (₹1,450)</option>
                 <option value="Thyroid Profile (T3, T4, TSH)">Thyroid Profile (T3, T4, TSH) (₹950)</option>
@@ -191,21 +191,21 @@ export const PatientPortal: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-slate-700 font-semibold mb-1">Preferred Date</label>
+              <label className="block text-gray-700 font-semibold mb-1">Preferred Date</label>
               <input
                 type="date"
                 value={date}
                 onChange={e => setDate(e.target.value)}
-                className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full p-2.5 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
 
             <div>
-              <label className="block text-slate-700 font-semibold mb-1">Preferred Time Slot</label>
+              <label className="block text-gray-700 font-semibold mb-1">Preferred Time Slot</label>
               <select
                 value={timeSlot}
                 onChange={e => setTimeSlot(e.target.value)}
-                className="w-full p-2.5 border border-slate-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full p-2.5 border border-gray-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-emerald-500"
               >
                 <option value="08:00 AM">08:00 AM (Morning Fasting Slot)</option>
                 <option value="09:30 AM">09:30 AM</option>
@@ -227,8 +227,8 @@ export const PatientPortal: React.FC = () => {
 
       {/* Tab 3: Reports */}
       {activeTab === 'reports' && (
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-4">
-          <h3 className="font-bold text-slate-900 text-sm">Your Verified Diagnostic Reports</h3>
+        <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs space-y-4">
+          <h3 className="font-bold text-gray-900 text-sm">Your Verified Diagnostic Reports</h3>
 
           {patientReport ? (
             <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl space-y-3 text-xs">
@@ -239,7 +239,7 @@ export const PatientPortal: React.FC = () => {
                 </span>
               </div>
 
-              <div className="text-slate-600 text-[11px] space-y-0.5">
+              <div className="text-gray-600 text-[11px] space-y-0.5">
                 <p>Report Number: {patientReport.reportNumber}</p>
                 <p>Reported Date: {patientReport.reportedDate}</p>
                 <p>Pathologist: {patientReport.pathologistName}</p>
@@ -255,7 +255,7 @@ export const PatientPortal: React.FC = () => {
               </div>
             </div>
           ) : (
-            <p className="text-xs text-slate-500">No reports found for this profile.</p>
+            <p className="text-xs text-gray-500">No reports found for this profile.</p>
           )}
         </div>
       )}

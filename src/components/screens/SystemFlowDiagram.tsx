@@ -28,13 +28,13 @@ export const SystemFlowDiagram: React.FC = () => {
   return (
     <div className="space-y-6 animate-fadeIn">
       {/* Header */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <GitMerge className="w-5 h-5 text-emerald-600" />
-            <h2 className="text-xl font-bold text-slate-900">End-to-End Healthcare System Workflow Diagram</h2>
+            <h2 className="text-xl font-bold text-gray-900">End-to-End Healthcare System Workflow Diagram</h2>
           </div>
-          <p className="text-slate-500 text-xs mt-0.5">
+          <p className="text-gray-500 text-xs mt-0.5">
             Complete architectural mapping from patient intake to clinical verification, billing, and executive dashboard analytics.
           </p>
         </div>
@@ -45,8 +45,8 @@ export const SystemFlowDiagram: React.FC = () => {
       </div>
 
       {/* Main Patient Journey Pipeline Visual */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
-        <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wider text-slate-500">
+      <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs space-y-4">
+        <h3 className="font-bold text-gray-900 text-sm uppercase tracking-wider text-gray-500">
           1. Main Patient Clinical Journey Flow
         </h3>
 
@@ -68,7 +68,7 @@ export const SystemFlowDiagram: React.FC = () => {
                 </div>
 
                 {idx < mainJourney.length - 1 && (
-                  <ArrowRight className="w-5 h-5 text-slate-400 shrink-0 hidden lg:block" />
+                  <ArrowRight className="w-5 h-5 text-gray-400 shrink-0 hidden lg:block" />
                 )}
               </React.Fragment>
             );
@@ -80,8 +80,8 @@ export const SystemFlowDiagram: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         {/* Financial Flow */}
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-3">
-          <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
+        <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs space-y-3">
+          <h3 className="font-bold text-gray-900 text-sm flex items-center gap-2">
             <CreditCard className="w-4 h-4 text-emerald-600" />
             <span>2. Financial & Accounts Workflow</span>
           </h3>
@@ -101,8 +101,8 @@ export const SystemFlowDiagram: React.FC = () => {
         </div>
 
         {/* Executive Analytics Flow */}
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-3">
-          <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
+        <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs space-y-3">
+          <h3 className="font-bold text-gray-900 text-sm flex items-center gap-2">
             <BarChart3 className="w-4 h-4 text-emerald-600" />
             <span>3. Executive Analytics & Governance</span>
           </h3>

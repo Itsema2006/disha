@@ -51,7 +51,7 @@ const MainLayout: React.FC = () => {
   if (showLoginScreen || !isAuthenticated) {
     return (
       <div className="relative">
-        <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4 flex items-center justify-between border-b border-slate-800">
+        <div className="bg-gray-900 text-gray-300 text-xs py-2 px-4 flex items-center justify-between border-b border-gray-800">
           <button 
             onClick={() => {
               setShowLanding(true);
@@ -62,7 +62,7 @@ const MainLayout: React.FC = () => {
             <Home className="w-4 h-4" />
             <span>← Back to Disha Landing Screen</span>
           </button>
-          <span className="text-[11px] text-slate-400">Disha Diagnostic Centre • Tariff & Staff Portal</span>
+          <span className="text-[11px] text-gray-400">Disha Diagnostic Centre • Tariff & Staff Portal</span>
         </div>
 
         <LoginScreen />
@@ -73,7 +73,7 @@ const MainLayout: React.FC = () => {
   // Render patient portal view directly if active role is patient
   if (currentRole === 'patient') {
     return (
-      <div className="min-h-screen bg-slate-900 flex flex-col">
+      <div className="min-h-screen bg-gray-900 flex flex-col">
         <RoleSwitcherBanner />
         <Header />
         <main className="flex-1 p-4 md:p-8 max-w-7xl mx-auto w-full">
@@ -119,7 +119,7 @@ const MainLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="min-h-screen bg-gray-50 flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
       <RoleSwitcherBanner />
       <Header />
       <div className="flex-1 flex overflow-hidden">

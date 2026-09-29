@@ -15,10 +15,10 @@ export const BillingScreen: React.FC = () => {
 
   return (
     <div className="space-y-6 animate-fadeIn">
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-xl font-bold text-slate-900">Billing & GST Invoice Management</h2>
-          <p className="text-slate-500 text-xs mt-0.5">
+          <h2 className="text-xl font-bold text-gray-900">Billing & GST Invoice Management</h2>
+          <p className="text-gray-500 text-xs mt-0.5">
             Finance ledger, UPI payments tracking, patient billing & tax invoice generation.
           </p>
         </div>
@@ -35,9 +35,9 @@ export const BillingScreen: React.FC = () => {
         </button>
       </div>
 
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
-        <div className="p-4 border-b border-slate-100 flex items-center justify-between">
-          <h3 className="font-bold text-slate-900 text-sm">Today's Invoices</h3>
+      <div className="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden">
+        <div className="p-4 border-b border-gray-100 flex items-center justify-between">
+          <h3 className="font-bold text-gray-900 text-sm">Today's Invoices</h3>
           <span className="text-xs text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1 rounded-full">
             Total Collections: ₹11,400
           </span>
@@ -45,7 +45,7 @@ export const BillingScreen: React.FC = () => {
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
-            <thead className="bg-slate-50 text-slate-500 font-semibold uppercase text-[10px] border-b border-slate-100">
+            <thead className="bg-gray-50 text-gray-500 font-semibold uppercase text-[10px] border-b border-gray-100">
               <tr>
                 <th className="p-3">Invoice ID</th>
                 <th className="p-3">Patient</th>
@@ -56,14 +56,14 @@ export const BillingScreen: React.FC = () => {
                 <th className="p-3 text-right">Action</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
+            <tbody className="divide-y divide-gray-100 font-medium text-gray-700">
               {invoices.map(inv => (
-                <tr key={inv.id} className="hover:bg-slate-50 transition-colors">
+                <tr key={inv.id} className="hover:bg-gray-50 transition-colors">
                   <td className="p-3 font-mono font-bold text-emerald-700">{inv.id}</td>
-                  <td className="p-3 font-bold text-slate-900">{inv.patient}</td>
-                  <td className="p-3 text-slate-800">{inv.test}</td>
-                  <td className="p-3 font-bold text-slate-900">₹{inv.amount.toLocaleString('en-IN')}</td>
-                  <td className="p-3 text-slate-600">{inv.method}</td>
+                  <td className="p-3 font-bold text-gray-900">{inv.patient}</td>
+                  <td className="p-3 text-gray-800">{inv.test}</td>
+                  <td className="p-3 font-bold text-gray-900">₹{inv.amount.toLocaleString('en-IN')}</td>
+                  <td className="p-3 text-gray-600">{inv.method}</td>
                   <td className="p-3">
                     <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
                       inv.status === 'Paid' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'

@@ -25,10 +25,10 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
   const { loginAsRole, setActiveModule } = useApp();
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-800 font-sans selection:bg-emerald-600 selection:text-white animate-fadeIn pb-12">
+    <div className="min-h-screen bg-gray-100 text-gray-800 font-sans selection:bg-emerald-600 selection:text-white animate-fadeIn pb-12">
       
       {/* Top Utility Bar (Slate Gray) */}
-      <div className="bg-slate-100 border-b border-slate-200 text-slate-600 text-xs py-2 px-4 sm:px-8">
+      <div className="bg-gray-100 border-b border-gray-200 text-gray-600 text-xs py-2 px-4 sm:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           
           {/* Left Contact Details */}
@@ -49,18 +49,18 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
           {/* Right Social & Language */}
           <div className="flex items-center gap-4 text-[11px]">
-            <div className="flex items-center gap-2.5 text-slate-500">
-              <span className="w-5 h-5 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">f</span>
-              <span className="w-5 h-5 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">📷</span>
-              <span className="w-5 h-5 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">💬</span>
-              <span className="w-5 h-5 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">📲</span>
+            <div className="flex items-center gap-2.5 text-gray-500">
+              <span className="w-5 h-5 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">f</span>
+              <span className="w-5 h-5 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">📷</span>
+              <span className="w-5 h-5 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">💬</span>
+              <span className="w-5 h-5 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center cursor-pointer transition-colors text-[10px]">📲</span>
             </div>
 
-            <div className="h-3 w-px bg-slate-300"></div>
+            <div className="h-3 w-px bg-gray-300"></div>
 
             <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 font-semibold text-[11px]">
               <span>Eng</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
+              <ChevronDown className="w-3 h-3 text-gray-400" />
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
       </div>
 
       {/* Main Header / Navigation Bar */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
           
           {/* Logo */}
@@ -80,27 +80,27 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
               <div className="font-extrabold text-emerald-950 text-xl tracking-tight leading-none font-serif">
                 Disha
               </div>
-              <div className="text-[10px] uppercase font-bold tracking-widest text-slate-500 mt-0.5">
+              <div className="text-[10px] uppercase font-bold tracking-widest text-gray-500 mt-0.5">
                 Diagnostic Centre • Kolhapur
               </div>
             </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden lg:flex items-center gap-7 text-xs font-semibold text-slate-600">
+          <div className="hidden lg:flex items-center gap-7 text-xs font-semibold text-gray-600">
             <a href="#home" className="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Home</a>
             <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
               <span>About Us</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
+              <ChevronDown className="w-3 h-3 text-gray-400" />
             </div>
             <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
               <span>Pathologists & Doctors</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
+              <ChevronDown className="w-3 h-3 text-gray-400" />
             </div>
             <a href="#services" className="hover:text-emerald-700 transition-colors">Departments</a>
             <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
               <span>AI Voice & WhatsApp</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
+              <ChevronDown className="w-3 h-3 text-gray-400" />
             </div>
             <a href="#packages" className="hover:text-emerald-700 transition-colors">Health Packages</a>
             <a href="#contact" className="hover:text-emerald-700 transition-colors">Contact Us</a>
@@ -144,7 +144,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
             <div className="pt-2">
               <button
                 onClick={onGetConnected}
-                className="px-6 py-3 bg-white hover:bg-slate-100 text-emerald-950 font-extrabold rounded-xl text-xs shadow-lg transition-all hover:scale-105 inline-flex items-center gap-2"
+                className="px-6 py-3 bg-white hover:bg-gray-100 text-emerald-950 font-extrabold rounded-xl text-xs shadow-lg transition-all hover:scale-105 inline-flex items-center gap-2"
               >
                 <span>Book an Appointment</span>
               </button>
@@ -174,72 +174,72 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
           {/* Card 1: Doctor Consultation */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Stethoscope className="w-6 h-6" />
             </div>
 
-            <h3 className="font-bold text-slate-900 text-base mb-1">Doctor Consultation</h3>
-            <p className="text-slate-500 text-xs mb-4">Book specialist pathologists & physicians in Kolhapur.</p>
+            <h3 className="font-bold text-gray-900 text-base mb-1">Doctor Consultation</h3>
+            <p className="text-gray-500 text-xs mb-4">Book specialist pathologists & physicians in Kolhapur.</p>
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>Find Doctors</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
             </div>
           </div>
 
           {/* Card 2: Health Package */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1 relative overflow-hidden"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1 relative overflow-hidden"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Activity className="w-6 h-6" />
             </div>
 
-            <h3 className="font-bold text-slate-900 text-base mb-1">Health Package</h3>
-            <p className="text-slate-500 text-xs mb-4">Sr. Citizen & Full Body 62-Test comprehensive checkup.</p>
+            <h3 className="font-bold text-gray-900 text-base mb-1">Health Package</h3>
+            <p className="text-gray-500 text-xs mb-4">Sr. Citizen & Full Body 62-Test comprehensive checkup.</p>
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>View Plans</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
             </div>
           </div>
 
           {/* Card 3: Buy Medicine / Diagnostic Tests */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Pill className="w-6 h-6" />
             </div>
 
-            <h3 className="font-bold text-slate-900 text-base mb-1">Diagnostic Tests</h3>
-            <p className="text-slate-500 text-xs mb-4">CBC, Lipid, HbA1c, Thyroid & Radiology MRI services.</p>
+            <h3 className="font-bold text-gray-900 text-base mb-1">Diagnostic Tests</h3>
+            <p className="text-gray-500 text-xs mb-4">CBC, Lipid, HbA1c, Thyroid & Radiology MRI services.</p>
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>Explore Tests</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
             </div>
           </div>
 
           {/* Card 4: View Health Record */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <FileText className="w-6 h-6" />
             </div>
 
-            <h3 className="font-bold text-slate-900 text-base mb-1">View Health Record</h3>
-            <p className="text-slate-500 text-xs mb-4">Download verified PDF diagnostic reports & history.</p>
+            <h3 className="font-bold text-gray-900 text-base mb-1">View Health Record</h3>
+            <p className="text-gray-500 text-xs mb-4">Download verified PDF diagnostic reports & history.</p>
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>View Reports</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
             </div>
           </div>
 
@@ -249,15 +249,15 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
       {/* Additional Healthcare Information Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 mt-16 space-y-8">
-        <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="text-xs font-extrabold text-emerald-700 uppercase tracking-widest">
               AI Voice & WhatsApp Automation
             </span>
-            <h3 className="text-2xl font-bold text-slate-900 mt-1">
+            <h3 className="text-2xl font-bold text-gray-900 mt-1">
               Connect to Disha Diagnostic Platform
             </h3>
-            <p className="text-slate-500 text-xs mt-1 max-w-xl">
+            <p className="text-gray-500 text-xs mt-1 max-w-xl">
               Log in to test role-based workflows for Doctors, Lab Techs, Receptionists, Accounts & Admin.
             </p>
           </div>
