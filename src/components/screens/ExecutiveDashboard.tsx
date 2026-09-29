@@ -285,12 +285,12 @@ export const ExecutiveDashboard: React.FC = () => {
             <svg className="w-full h-full overflow-visible" viewBox="0 0 500 150">
               <defs>
                 <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#0284c7" stopOpacity="0.3" />
-                  <stop offset="100%" stopColor="#0284c7" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#10b981" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#0d9488" stopOpacity="0.3" />
-                  <stop offset="100%" stopColor="#0d9488" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#06b6d4" stopOpacity="0" />
                 </linearGradient>
               </defs>
 
@@ -307,7 +307,7 @@ export const ExecutiveDashboard: React.FC = () => {
               <path
                 d="M 0 120 Q 80 40, 160 70 T 320 30 T 500 90"
                 fill="none"
-                stroke="#0284c7"
+                stroke="#10b981"
                 strokeWidth="3"
               />
 
@@ -315,16 +315,16 @@ export const ExecutiveDashboard: React.FC = () => {
               <path
                 d="M 0 130 Q 80 80, 160 50 T 320 40 T 500 60"
                 fill="none"
-                stroke="#0d9488"
+                stroke="#06b6d4"
                 strokeWidth="2.5"
                 strokeDasharray="4 2"
               />
 
               {/* Data points */}
-              <circle cx="160" cy="70" r="4" fill="#0284c7" className="animate-ping" />
-              <circle cx="160" cy="70" r="4" fill="#0284c7" />
-              <circle cx="320" cy="30" r="4" fill="#0284c7" />
-              <circle cx="320" cy="40" r="4" fill="#0d9488" />
+              <circle cx="160" cy="70" r="4" fill="#10b981" className="animate-ping" />
+              <circle cx="160" cy="70" r="4" fill="#10b981" />
+              <circle cx="320" cy="30" r="4" fill="#10b981" />
+              <circle cx="320" cy="40" r="4" fill="#06b6d4" />
             </svg>
 
             {/* X Axis Labels */}

@@ -43,7 +43,7 @@ export const LoginScreen: React.FC = () => {
 
   const roleDemoCards: { role: Role; name: string; title: string; color: string }[] = [
     { role: 'owner', name: 'Dr. Ananya Deshmukh', title: 'Owner / Chief Admin', color: 'bg-purple-50 text-purple-700 border-purple-200' },
-    { role: 'ops_manager', name: 'Vikram Patil', title: 'Operations Manager', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+    { role: 'ops_manager', name: 'Vikram Patil', title: 'Operations Manager', color: 'bg-cyan-50 text-cyan-700 border-cyan-200' },
     { role: 'receptionist', name: 'Rahul Sharma', title: 'Receptionist', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
     { role: 'lab_tech', name: 'Priya Shinde', title: 'Lab Technician', color: 'bg-cyan-50 text-cyan-700 border-cyan-200' },
     { role: 'pathologist', name: 'Dr. Rajesh Mehta', title: 'Pathologist (MD)', color: 'bg-indigo-50 text-indigo-700 border-indigo-200' },

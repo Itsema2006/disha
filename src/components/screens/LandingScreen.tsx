@@ -73,7 +73,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
           
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-700 to-blue-500 flex items-center justify-center text-white font-serif font-bold text-2xl shadow-md">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-700 to-cyan-500 flex items-center justify-center text-white font-serif font-bold text-2xl shadow-md">
               D
             </div>
             <div>
@@ -121,10 +121,10 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
       <main className="max-w-7xl mx-auto px-4 sm:px-8 mt-6">
         
         {/* Large Rounded Hero Banner (Blue Theme with Doctor Overlay) */}
-        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-blue-950 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl min-h-[420px] flex flex-col justify-center">
+        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-cyan-950 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl min-h-[420px] flex flex-col justify-center">
           
           {/* Subtle Background Pattern */}
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/30 via-transparent to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-600/30 via-transparent to-transparent pointer-events-none"></div>
 
           {/* Content Left Column */}
           <div className="max-w-xl relative z-10 space-y-5">
