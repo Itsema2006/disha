@@ -24,7 +24,7 @@ export const Footer: React.FC<{ className?: string, theme?: 'light' | 'dark' }> 
             &copy; {new Date().getFullYear()} Disha Diagnostic Centre. All rights reserved.
           </p>
           <p className={`text-[10px] ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
-            Powered by <span className="font-semibold text-emerald-600">Antigravity AI</span>
+            Powered by <span className="font-semibold text-emerald-600">Nextinnovations.pvt.ltd</span>
           </p>
         </div>
       </div>
