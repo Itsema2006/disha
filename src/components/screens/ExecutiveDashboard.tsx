@@ -92,7 +92,7 @@ export const ExecutiveDashboard: React.FC = () => {
     <div className="space-y-6 animate-fadeIn">
       {/* Header Banner & Quick Actions */}
       <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-cyan-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
-        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-white/5 backdrop-blur-3xl -skew-x-12 transform trangray-x-12"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-white/5 backdrop-blur-3xl -skew-x-12 transform translate-x-12"></div>
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 text-emerald-200 text-xs font-medium mb-2 border border-white/10">

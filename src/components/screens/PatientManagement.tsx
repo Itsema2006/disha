@@ -44,7 +44,7 @@ export const PatientManagement: React.FC = () => {
         </div>
 
         <div className="relative max-w-md w-full">
-          <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -trangray-y-1/2" />
+          <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             placeholder="Search by Patient ID, Name, or Mobile Phone..."

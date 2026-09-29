@@ -175,7 +175,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
           {/* Card 1: Doctor Consultation */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Stethoscope className="w-6 h-6" />
@@ -186,14 +186,14 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>Find Doctors</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </div>
           </div>
 
           {/* Card 2: Health Package */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1 relative overflow-hidden"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1 relative overflow-hidden"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Activity className="w-6 h-6" />
@@ -204,14 +204,14 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>View Plans</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </div>
           </div>
 
           {/* Card 3: Buy Medicine / Diagnostic Tests */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <Pill className="w-6 h-6" />
@@ -222,14 +222,14 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>Explore Tests</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </div>
           </div>
 
           {/* Card 4: View Health Record */}
           <div 
             onClick={onGetConnected}
-            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-trangray-y-1"
+            className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200/80 hover:shadow-xl transition-all cursor-pointer group hover:-translate-y-1"
           >
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
               <FileText className="w-6 h-6" />
@@ -240,7 +240,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
 
             <div className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1">
               <span>View Reports</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:trangray-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </div>
           </div>
 

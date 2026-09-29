@@ -118,7 +118,7 @@ export const DiagnosticReports: React.FC = () => {
         </div>
 
         <div className="relative max-w-xs w-full">
-          <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -trangray-y-1/2" />
+          <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             placeholder="Search report #, patient or test..."

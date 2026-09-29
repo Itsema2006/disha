@@ -41,7 +41,7 @@ export const PermissionManagement: React.FC = () => {
         <div className="p-4 border-b border-gray-100 flex items-center justify-between">
           <h3 className="font-bold text-gray-900 text-sm">Disha Diagnostic Staff Roster ({staffUsers.length})</h3>
           <div className="relative max-w-xs w-full">
-            <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -trangray-y-1/2" />
+            <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               placeholder="Filter staff member or role..."

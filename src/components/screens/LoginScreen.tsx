@@ -126,7 +126,7 @@ export const LoginScreen: React.FC = () => {
               <div>
                 <label className="block text-xs font-semibold text-gray-700 mb-1">Email / Mobile Number</label>
                 <div className="relative">
-                  <Mail className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -trangray-y-1/2" />
+                  <Mail className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
                   <input
                     type="text"
                     value={emailOrPhone}
@@ -140,7 +140,7 @@ export const LoginScreen: React.FC = () => {
               <div>
                 <label className="block text-xs font-semibold text-gray-700 mb-1">Password</label>
                 <div className="relative">
-                  <Lock className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -trangray-y-1/2" />
+                  <Lock className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
                   <input
                     type="password"
                     value={password}
