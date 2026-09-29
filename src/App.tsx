@@ -3,6 +3,7 @@ import { AppProvider, useApp } from './context/AppContext';
 import { RoleSwitcherBanner } from './components/common/RoleSwitcherBanner';
 import { Header } from './components/layout/Header';
 import { Sidebar } from './components/layout/Sidebar';
+import { Footer } from './components/layout/Footer';
 import { PermissionGuard } from './components/common/PermissionGuard';
 
 // Screens
@@ -76,8 +77,11 @@ const MainLayout: React.FC = () => {
       <div className="min-h-screen bg-gray-900 flex flex-col">
         <RoleSwitcherBanner />
         <Header />
-        <main className="flex-1 p-4 md:p-8 max-w-7xl mx-auto w-full">
-          <PatientPortal />
+        <main className="flex-1 p-4 md:p-8 max-w-7xl mx-auto w-full flex flex-col">
+          <div className="flex-1">
+            <PatientPortal />
+          </div>
+          <Footer className="mt-8 !bg-transparent border-t border-gray-800" theme="dark" />
         </main>
       </div>
     );
@@ -124,10 +128,13 @@ const MainLayout: React.FC = () => {
       <Header />
       <div className="flex-1 flex overflow-hidden">
         <Sidebar />
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto max-w-7xl mx-auto w-full">
-          <PermissionGuard module={activeModule}>
-            {renderModuleScreen()}
-          </PermissionGuard>
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto w-full flex flex-col">
+          <div className="max-w-7xl mx-auto w-full flex-1">
+            <PermissionGuard module={activeModule}>
+              {renderModuleScreen()}
+            </PermissionGuard>
+          </div>
+          <Footer className="mt-8" />
         </main>
       </div>
     </div>

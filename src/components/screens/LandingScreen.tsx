@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../layout/Footer';
 import { useApp } from '../../context/AppContext';
 import { 
   MapPin, 
@@ -271,6 +272,8 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
         </div>
       </section>
 
+      {/* Footer */}
+      <Footer className="mt-16" />
     </div>
   );
 };
