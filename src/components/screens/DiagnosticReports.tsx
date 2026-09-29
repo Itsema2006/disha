@@ -67,7 +67,7 @@ export const DiagnosticReports: React.FC = () => {
         <div>
           <div className="flex items-center gap-2">
             <h2 className="text-xl font-bold text-slate-900">Diagnostic Reports Lifecycle Pipeline</h2>
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800 border border-sky-200">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
               NABL Verified
             </span>
           </div>
@@ -82,8 +82,8 @@ export const DiagnosticReports: React.FC = () => {
             <Clock className="w-4 h-4 text-amber-600" />
             <span>Pending Review: {pendingCount}</span>
           </div>
-          <div className="px-3 py-1.5 bg-sky-50 border border-sky-200 rounded-xl text-xs font-semibold text-sky-900 flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-sky-600" />
+          <div className="px-3 py-1.5 bg-emerald-50 border border-emerald-200 rounded-xl text-xs font-semibold text-emerald-900 flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-600" />
             <span>Ready: {readyCount}</span>
           </div>
           <div className="px-3 py-1.5 bg-emerald-50 border border-emerald-200 rounded-xl text-xs font-semibold text-emerald-900 flex items-center gap-2">
@@ -108,7 +108,7 @@ export const DiagnosticReports: React.FC = () => {
               onClick={() => setActiveTab(tab.id)}
               className={`px-3 py-1.5 rounded-lg font-semibold transition-all shrink-0 ${
                 activeTab === tab.id 
-                  ? 'bg-sky-600 text-white shadow-xs' 
+                  ? 'bg-emerald-600 text-white shadow-xs' 
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >
@@ -147,7 +147,7 @@ export const DiagnosticReports: React.FC = () => {
             <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
               {filteredReports.map(rep => (
                 <tr key={rep.id} className="hover:bg-slate-50 transition-colors">
-                  <td className="p-3 font-mono font-bold text-sky-700">{rep.reportNumber}</td>
+                  <td className="p-3 font-mono font-bold text-emerald-700">{rep.reportNumber}</td>
                   <td className="p-3">
                     <div className="font-bold text-slate-900">{rep.patientName}</div>
                     <div className="text-[10px] text-slate-400 font-normal">{rep.patientAge} yrs • {rep.patientGender}</div>
@@ -160,7 +160,7 @@ export const DiagnosticReports: React.FC = () => {
                   <td className="p-3">
                     <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
                       rep.status === 'Delivered' ? 'bg-emerald-100 text-emerald-800' :
-                      rep.status === 'Verified' ? 'bg-sky-100 text-sky-800' :
+                      rep.status === 'Verified' ? 'bg-emerald-100 text-emerald-800' :
                       rep.status === 'Under Review' ? 'bg-amber-100 text-amber-800' :
                       'bg-slate-100 text-slate-700'
                     }`}>
@@ -180,7 +180,7 @@ export const DiagnosticReports: React.FC = () => {
                   <td className="p-3 text-right space-x-2">
                     <button
                       onClick={() => setPreviewReport(rep)}
-                      className="px-2.5 py-1 bg-sky-50 text-sky-700 hover:bg-sky-100 font-semibold rounded text-[11px]"
+                      className="px-2.5 py-1 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 font-semibold rounded text-[11px]"
                     >
                       View Report
                     </button>
@@ -226,7 +226,7 @@ export const DiagnosticReports: React.FC = () => {
             {/* Header / Modal Close */}
             <div className="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-6 h-6 text-sky-600" />
+                <ShieldCheck className="w-6 h-6 text-emerald-600" />
                 <div>
                   <h3 className="font-bold text-slate-900 text-base">Disha Diagnostic Centre PDF Viewer</h3>
                   <p className="text-slate-500 text-xs">Report ID: {previewReport.reportNumber}</p>
@@ -253,14 +253,14 @@ export const DiagnosticReports: React.FC = () => {
             {/* Official PDF Document Layout */}
             <div className="border-2 border-slate-200 rounded-xl p-8 bg-white text-slate-800 space-y-6 shadow-sm">
               {/* Letterhead Header */}
-              <div className="flex items-center justify-between border-b-2 border-sky-600 pb-4">
+              <div className="flex items-center justify-between border-b-2 border-emerald-600 pb-4">
                 <div>
-                  <h1 className="font-bold text-2xl text-sky-900 tracking-tight">DISHA DIAGNOSTIC CENTRE</h1>
+                  <h1 className="font-bold text-2xl text-emerald-900 tracking-tight">DISHA DIAGNOSTIC CENTRE</h1>
                   <p className="text-xs text-slate-600 font-medium">NABL Accredited • ISO 9001:2015 Certified Pathology Laboratory</p>
                   <p className="text-[11px] text-slate-500">Opp. District Court, Tarabai Park, Kolhapur 416003 • Tel: +91 0231 2654321</p>
                 </div>
                 <div className="text-right">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-sky-600 to-teal-500 text-white font-bold text-xl flex items-center justify-center ml-auto">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-emerald-600 to-cyan-500 text-white font-bold text-xl flex items-center justify-center ml-auto">
                     D
                   </div>
                   <span className="text-[10px] text-emerald-700 font-bold block mt-1">✓ Verified Digital Report</span>
@@ -288,9 +288,9 @@ export const DiagnosticReports: React.FC = () => {
               </div>
 
               {/* Test Name Header */}
-              <div className="bg-sky-900 text-white p-2.5 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center justify-between">
+              <div className="bg-emerald-900 text-white p-2.5 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center justify-between">
                 <span>TEST: {previewReport.testName}</span>
-                <span className="text-[10px] font-normal text-sky-200">CATEGORY: {previewReport.category}</span>
+                <span className="text-[10px] font-normal text-emerald-200">CATEGORY: {previewReport.category}</span>
               </div>
 
               {/* Results Table */}
@@ -331,7 +331,7 @@ export const DiagnosticReports: React.FC = () => {
                 </div>
 
                 <div className="text-right">
-                  <div className="font-serif italic text-sky-900 font-bold text-sm">Dr. Rajesh Mehta</div>
+                  <div className="font-serif italic text-emerald-900 font-bold text-sm">Dr. Rajesh Mehta</div>
                   <p className="font-bold text-slate-900 text-xs">DR. RAJESH MEHTA (MD Pathologist)</p>
                   <p className="text-slate-500 text-[10px]">Reg #MCI-48291 • Chief Consultant Pathologist</p>
                 </div>

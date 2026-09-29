@@ -17,12 +17,12 @@ export const SystemFlowDiagram: React.FC = () => {
 
   const mainJourney: FlowStep[] = [
     { id: '1', title: 'PATIENT', sub: 'Phone Call / Portal', icon: User, module: 'patient_portal' as any, color: 'bg-emerald-600 text-white' },
-    { id: '2', title: 'AI VOICE / WHATSAPP', sub: '24/7 Automated Intake', icon: PhoneCall, module: 'ai_receptionist', color: 'bg-sky-600 text-white' },
-    { id: '3', title: 'RECEPTIONIST', sub: 'Patient Reg & Confirmation', icon: Calendar, module: 'appointments', color: 'bg-teal-600 text-white' },
+    { id: '2', title: 'AI VOICE / WHATSAPP', sub: '24/7 Automated Intake', icon: PhoneCall, module: 'ai_receptionist', color: 'bg-emerald-600 text-white' },
+    { id: '3', title: 'RECEPTIONIST', sub: 'Patient Reg & Confirmation', icon: Calendar, module: 'appointments', color: 'bg-cyan-600 text-white' },
     { id: '4', title: 'LAB TECHNICIAN', sub: 'Sample & Results Entry', icon: FlaskConical, module: 'reports', color: 'bg-indigo-600 text-white' },
     { id: '5', title: 'PATHOLOGIST', sub: 'Clinical Verification', icon: Stethoscope, module: 'reports', color: 'bg-purple-600 text-white' },
     { id: '6', title: 'WHATSAPP AUTOMATION', sub: 'PDF Report Delivery', icon: MessageSquare, module: 'whatsapp', color: 'bg-emerald-700 text-white' },
-    { id: '7', title: 'PATIENT PORTAL', sub: 'Secure Download', icon: Download, module: 'reports', color: 'bg-sky-700 text-white' },
+    { id: '7', title: 'PATIENT PORTAL', sub: 'Secure Download', icon: Download, module: 'reports', color: 'bg-emerald-700 text-white' },
   ];
 
   return (
@@ -31,7 +31,7 @@ export const SystemFlowDiagram: React.FC = () => {
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <GitMerge className="w-5 h-5 text-sky-600" />
+            <GitMerge className="w-5 h-5 text-emerald-600" />
             <h2 className="text-xl font-bold text-slate-900">End-to-End Healthcare System Workflow Diagram</h2>
           </div>
           <p className="text-slate-500 text-xs mt-0.5">
@@ -39,7 +39,7 @@ export const SystemFlowDiagram: React.FC = () => {
           </p>
         </div>
 
-        <span className="px-3 py-1.5 bg-sky-50 text-sky-900 border border-sky-200 rounded-xl text-xs font-semibold">
+        <span className="px-3 py-1.5 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-xl text-xs font-semibold">
           💡 Click any node to open that module
         </span>
       </div>
@@ -103,19 +103,19 @@ export const SystemFlowDiagram: React.FC = () => {
         {/* Executive Analytics Flow */}
         <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-3">
           <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
-            <BarChart3 className="w-4 h-4 text-sky-600" />
+            <BarChart3 className="w-4 h-4 text-emerald-600" />
             <span>3. Executive Analytics & Governance</span>
           </h3>
 
-          <div className="p-4 bg-sky-50 border border-sky-200 rounded-xl space-y-2 text-xs text-sky-950">
+          <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl space-y-2 text-xs text-emerald-950">
             <div className="flex items-center justify-between font-bold">
               <span>ALL OPERATIONAL DATA</span>
-              <ArrowRight className="w-4 h-4 text-sky-600" />
+              <ArrowRight className="w-4 h-4 text-emerald-600" />
               <span>OPS MANAGER</span>
-              <ArrowRight className="w-4 h-4 text-sky-600" />
+              <ArrowRight className="w-4 h-4 text-emerald-600" />
               <span>EXECUTIVE DASHBOARD</span>
             </div>
-            <p className="text-[11px] text-sky-800">
+            <p className="text-[11px] text-emerald-800">
               Real-time aggregation of AI calls, turnaround time, report statuses & revenue KPIs for Owner/Admin.
             </p>
           </div>

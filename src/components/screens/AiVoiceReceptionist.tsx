@@ -47,13 +47,13 @@ export const AiVoiceReceptionist: React.FC = () => {
       {/* Top Banner & Status Controls */}
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold shadow-inner">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shadow-inner">
             <PhoneCall className="w-6 h-6" />
           </div>
           <div>
             <div className="flex items-center gap-2">
               <h2 className="text-xl font-bold text-slate-900">AI Voice Receptionist Simulator</h2>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800 border border-sky-200">
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
                 Voice AI Engine v4.2
               </span>
             </div>
@@ -83,7 +83,7 @@ export const AiVoiceReceptionist: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Total Calls Today</span>
-            <PhoneIncoming className="w-4 h-4 text-sky-600" />
+            <PhoneIncoming className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">{totalCalls}</div>
           <div className="mt-1 text-[10px] text-slate-400">Incoming calls</div>
@@ -119,7 +119,7 @@ export const AiVoiceReceptionist: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Avg Call Duration</span>
-            <Clock className="w-4 h-4 text-sky-600" />
+            <Clock className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">1m 52s</div>
           <div className="mt-1 text-[10px] text-slate-400">Efficient automated dialogue</div>
@@ -159,7 +159,7 @@ export const AiVoiceReceptionist: React.FC = () => {
                     key={call.id}
                     onClick={() => setSelectedCall(call)}
                     className={`cursor-pointer transition-colors ${
-                      selectedCall.id === call.id ? 'bg-sky-50/80 font-semibold text-sky-900' : 'hover:bg-slate-50'
+                      selectedCall.id === call.id ? 'bg-emerald-50/80 font-semibold text-emerald-900' : 'hover:bg-slate-50'
                     }`}
                   >
                     <td className="p-3 text-slate-900 font-bold">{call.callerName}</td>
@@ -180,7 +180,7 @@ export const AiVoiceReceptionist: React.FC = () => {
                       </span>
                     </td>
                     <td className="p-3 text-right">
-                      <button className="text-sky-600 hover:text-sky-800 font-semibold text-[11px]">
+                      <button className="text-emerald-600 hover:text-emerald-800 font-semibold text-[11px]">
                         Inspect →
                       </button>
                     </td>
@@ -195,7 +195,7 @@ export const AiVoiceReceptionist: React.FC = () => {
         <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div>
-              <span className="text-[10px] uppercase font-bold text-sky-600 tracking-wider">
+              <span className="text-[10px] uppercase font-bold text-emerald-600 tracking-wider">
                 Call Detail Panel #{selectedCall.id}
               </span>
               <h3 className="font-bold text-slate-900 text-base">{selectedCall.callerName}</h3>
@@ -215,7 +215,7 @@ export const AiVoiceReceptionist: React.FC = () => {
           <div className="bg-slate-900 text-white p-4 rounded-xl flex items-center justify-between gap-3 shadow-inner">
             <button
               onClick={handleAudioToggle}
-              className="w-9 h-9 rounded-full bg-sky-500 hover:bg-sky-400 text-white flex items-center justify-center shrink-0 transition-all shadow-md"
+              className="w-9 h-9 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shrink-0 transition-all shadow-md"
             >
               {isPlayingAudio ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 ml-0.5" />}
             </button>
@@ -226,7 +226,7 @@ export const AiVoiceReceptionist: React.FC = () => {
                 <span>{selectedCall.duration}</span>
               </div>
               <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                <div className={`h-full bg-sky-400 rounded-full ${isPlayingAudio ? 'w-2/3 transition-all duration-3000' : 'w-1/4'}`}></div>
+                <div className={`h-full bg-emerald-400 rounded-full ${isPlayingAudio ? 'w-2/3 transition-all duration-3000' : 'w-1/4'}`}></div>
               </div>
             </div>
 
@@ -234,19 +234,19 @@ export const AiVoiceReceptionist: React.FC = () => {
           </div>
 
           {/* AI Summary Box */}
-          <div className="p-3.5 bg-sky-50 border border-sky-100 rounded-xl space-y-1 text-xs">
-            <div className="flex items-center gap-1.5 text-sky-900 font-bold">
-              <Sparkles className="w-4 h-4 text-sky-600" />
+          <div className="p-3.5 bg-emerald-50 border border-emerald-100 rounded-xl space-y-1 text-xs">
+            <div className="flex items-center gap-1.5 text-emerald-900 font-bold">
+              <Sparkles className="w-4 h-4 text-emerald-600" />
               <span>AI Automated Summary & Action:</span>
             </div>
             <p className="text-slate-700 leading-relaxed">{selectedCall.aiSummary}</p>
 
             {selectedCall.appointmentCreated && (
-              <div className="mt-2 pt-2 border-t border-sky-200/60 flex items-center justify-between text-[11px]">
-                <span className="text-sky-800 font-semibold">Appointment Action Created:</span>
+              <div className="mt-2 pt-2 border-t border-emerald-200/60 flex items-center justify-between text-[11px]">
+                <span className="text-emerald-800 font-semibold">Appointment Action Created:</span>
                 <button 
                   onClick={() => setActiveModule('appointments')} 
-                  className="px-2 py-0.5 rounded bg-sky-600 text-white font-bold hover:underline"
+                  className="px-2 py-0.5 rounded bg-emerald-600 text-white font-bold hover:underline"
                 >
                   View #{selectedCall.appointmentCreated} →
                 </button>
@@ -267,7 +267,7 @@ export const AiVoiceReceptionist: React.FC = () => {
                   className={`p-3 rounded-xl max-w-[90%] text-xs leading-relaxed ${
                     msg.sender === 'AI' 
                       ? 'bg-slate-100 text-slate-800 border border-slate-200 ml-0 mr-auto'
-                      : 'bg-sky-600 text-white ml-auto mr-0 shadow-xs'
+                      : 'bg-emerald-600 text-white ml-auto mr-0 shadow-xs'
                   }`}
                 >
                   <div className="flex items-center justify-between text-[10px] opacity-75 mb-1 font-semibold">

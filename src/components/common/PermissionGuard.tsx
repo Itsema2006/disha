@@ -34,7 +34,7 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
 
         <div className="mt-6 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-600 max-w-md mx-auto text-left space-y-2">
           <div className="flex items-center gap-2 text-slate-800 font-semibold">
-            <KeyRound className="w-4 h-4 text-sky-600" />
+            <KeyRound className="w-4 h-4 text-emerald-600" />
             <span>Authorized Roles for this module:</span>
           </div>
           <p className="text-slate-500">
@@ -53,7 +53,7 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
           
           <button
             onClick={() => loginAsRole('owner')}
-            className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
+            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
           >
             <RefreshCw className="w-4 h-4" />
             <span>Switch to Owner Role (Full Access)</span>
@@ -61,7 +61,7 @@ export const PermissionGuard: React.FC<PermissionGuardProps> = ({ module, childr
           
           <button
             onClick={() => setActiveModule('role_matrix')}
-            className="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
+            className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg text-xs font-medium flex items-center gap-2 shadow-sm transition-all"
           >
             <ShieldAlert className="w-4 h-4" />
             <span>Inspect RBAC Flow Matrix</span>

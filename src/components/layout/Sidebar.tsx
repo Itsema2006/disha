@@ -51,7 +51,7 @@ export const Sidebar: React.FC = () => {
   return (
     <aside className="w-64 bg-slate-900 text-slate-300 min-h-[calc(100vh-4rem)] flex flex-col border-r border-slate-800 shrink-0 select-none">
       <div className="p-4 border-b border-slate-800/80">
-        <div className="text-[10px] uppercase font-bold text-sky-400 tracking-wider">
+        <div className="text-[10px] uppercase font-bold text-emerald-400 tracking-wider">
           Logged-In Staff Role
         </div>
         <div className="mt-1 font-semibold text-white text-sm flex items-center justify-between">
@@ -77,14 +77,14 @@ export const Sidebar: React.FC = () => {
               onClick={() => setActiveModule(item.key)}
               className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-medium transition-all group ${
                 isActive
-                  ? 'bg-sky-600 text-white shadow-md shadow-sky-600/20 font-semibold'
+                  ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/20 font-semibold'
                   : isDenied
                   ? 'text-slate-500 hover:bg-slate-800/50 hover:text-slate-400 opacity-60'
                   : 'text-slate-300 hover:bg-slate-800 hover:text-white'
               }`}
             >
               <div className="flex items-center gap-3 min-w-0">
-                <ItemIcon className={`w-4 h-4 shrink-0 ${isActive ? 'text-white' : isDenied ? 'text-slate-600' : 'text-slate-400 group-hover:text-sky-400'}`} />
+                <ItemIcon className={`w-4 h-4 shrink-0 ${isActive ? 'text-white' : isDenied ? 'text-slate-600' : 'text-slate-400 group-hover:text-emerald-400'}`} />
                 <span className="truncate">{item.label}</span>
               </div>
 
@@ -92,7 +92,7 @@ export const Sidebar: React.FC = () => {
                 {isDenied && <span title="Permission Denied for current role"><Lock className="w-3 h-3 text-rose-400/70" /></span>}
                 {item.badge && !isDenied && (
                   <span className={`text-[10px] px-1.5 py-0.5 rounded font-semibold ${
-                    isActive ? 'bg-white/20 text-white' : 'bg-slate-800 text-sky-400 border border-slate-700'
+                    isActive ? 'bg-white/20 text-white' : 'bg-slate-800 text-emerald-400 border border-slate-700'
                   }`}>
                     {item.badge}
                   </span>

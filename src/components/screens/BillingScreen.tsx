@@ -59,7 +59,7 @@ export const BillingScreen: React.FC = () => {
             <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
               {invoices.map(inv => (
                 <tr key={inv.id} className="hover:bg-slate-50 transition-colors">
-                  <td className="p-3 font-mono font-bold text-sky-700">{inv.id}</td>
+                  <td className="p-3 font-mono font-bold text-emerald-700">{inv.id}</td>
                   <td className="p-3 font-bold text-slate-900">{inv.patient}</td>
                   <td className="p-3 text-slate-800">{inv.test}</td>
                   <td className="p-3 font-bold text-slate-900">₹{inv.amount.toLocaleString('en-IN')}</td>
@@ -74,7 +74,7 @@ export const BillingScreen: React.FC = () => {
                   <td className="p-3 text-right">
                     <button 
                       onClick={() => showToast(`Downloaded Receipt for ${inv.id}`)}
-                      className="text-sky-600 hover:underline font-semibold text-[11px]"
+                      className="text-emerald-600 hover:underline font-semibold text-[11px]"
                     >
                       Download Receipt
                     </button>

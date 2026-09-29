@@ -31,7 +31,7 @@ export const RoleMatrixScreen: React.FC = () => {
         );
       case 'view':
         return (
-          <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-sky-100 text-sky-800 font-bold text-[10px] border border-sky-200">
+          <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-emerald-100 text-emerald-800 font-bold text-[10px] border border-emerald-200">
             🔵 View
           </span>
         );
@@ -57,7 +57,7 @@ export const RoleMatrixScreen: React.FC = () => {
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <Grid3X3 className="w-5 h-5 text-sky-600" />
+            <Grid3X3 className="w-5 h-5 text-emerald-600" />
             <h2 className="text-xl font-bold text-slate-900">Interactive Role-to-Screen Flow Matrix</h2>
           </div>
           <p className="text-slate-500 text-xs mt-0.5">
@@ -65,7 +65,7 @@ export const RoleMatrixScreen: React.FC = () => {
           </p>
         </div>
 
-        <div className="px-3 py-1.5 bg-sky-50 text-sky-900 border border-sky-200 rounded-xl text-xs font-semibold">
+        <div className="px-3 py-1.5 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-xl text-xs font-semibold">
           💡 Click any Role row to test that role instantly
         </div>
       </div>
@@ -121,7 +121,7 @@ export const RoleMatrixScreen: React.FC = () => {
                 <tr 
                   key={row.role}
                   className={`transition-colors ${
-                    currentRole === row.role ? 'bg-sky-50/90 font-bold border-l-4 border-l-sky-600' : 'hover:bg-slate-50'
+                    currentRole === row.role ? 'bg-emerald-50/90 font-bold border-l-4 border-l-emerald-600' : 'hover:bg-slate-50'
                   }`}
                 >
                   {/* Role Name */}
@@ -131,10 +131,10 @@ export const RoleMatrixScreen: React.FC = () => {
                         loginAsRole(row.role);
                         showToast(`Switched active role to ${row.roleTitle}`);
                       }}
-                      className="text-left hover:text-sky-600 flex items-center gap-1.5 group"
+                      className="text-left hover:text-emerald-600 flex items-center gap-1.5 group"
                     >
                       <span>{row.roleTitle}</span>
-                      <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-sky-600" />
+                      <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-emerald-600" />
                     </button>
                     <div className="text-[10px] text-slate-400 font-normal">Click row to test</div>
                   </td>

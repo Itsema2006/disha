@@ -120,7 +120,7 @@ export const AppointmentManagement: React.FC = () => {
 
           <button
             onClick={() => setShowAddModal(true)}
-            className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md shadow-sky-600/20 transition-all"
+            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md shadow-emerald-600/20 transition-all"
           >
             <Plus className="w-4 h-4" />
             <span>Add Appointment</span>
@@ -137,7 +137,7 @@ export const AppointmentManagement: React.FC = () => {
             placeholder="Search patient, phone, or test name..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
-            className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:bg-white focus:ring-2 focus:ring-sky-500 outline-none"
+            className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:bg-white focus:ring-2 focus:ring-emerald-500 outline-none"
           />
         </div>
 
@@ -146,19 +146,19 @@ export const AppointmentManagement: React.FC = () => {
             <div className="bg-slate-100 p-0.5 rounded-lg border border-slate-200 flex items-center">
               <button 
                 onClick={() => setCalendarView('day')} 
-                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'day' ? 'bg-sky-600 text-white' : 'text-slate-600'}`}
+                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'day' ? 'bg-emerald-600 text-white' : 'text-slate-600'}`}
               >
                 Day
               </button>
               <button 
                 onClick={() => setCalendarView('week')} 
-                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'week' ? 'bg-sky-600 text-white' : 'text-slate-600'}`}
+                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'week' ? 'bg-emerald-600 text-white' : 'text-slate-600'}`}
               >
                 Week
               </button>
               <button 
                 onClick={() => setCalendarView('month')} 
-                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'month' ? 'bg-sky-600 text-white' : 'text-slate-600'}`}
+                className={`px-2.5 py-1 text-[11px] font-bold rounded ${calendarView === 'month' ? 'bg-emerald-600 text-white' : 'text-slate-600'}`}
               >
                 Month
               </button>
@@ -208,7 +208,7 @@ export const AppointmentManagement: React.FC = () => {
                   <span className="text-[10px] font-bold uppercase text-slate-400 font-mono">#{apt.id}</span>
                   <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
                     apt.status === 'Completed' ? 'bg-emerald-100 text-emerald-800' :
-                    apt.status === 'Confirmed' ? 'bg-sky-100 text-sky-800' :
+                    apt.status === 'Confirmed' ? 'bg-emerald-100 text-emerald-800' :
                     apt.status === 'Pending' ? 'bg-amber-100 text-amber-800' :
                     'bg-rose-100 text-rose-800'
                   }`}>
@@ -224,7 +224,7 @@ export const AppointmentManagement: React.FC = () => {
                     <span>{apt.phone}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <FileText className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+                    <FileText className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span className="font-medium text-slate-800">{apt.testName}</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -260,7 +260,7 @@ export const AppointmentManagement: React.FC = () => {
                 {apt.status === 'Pending' && canEdit && (
                   <button
                     onClick={() => updateAppointmentStatus(apt.id, 'Confirmed')}
-                    className="flex-1 py-1.5 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg text-xs transition-all flex items-center justify-center gap-1"
+                    className="flex-1 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg text-xs transition-all flex items-center justify-center gap-1"
                   >
                     <CheckCircle2 className="w-3.5 h-3.5" />
                     <span>Confirm</span>
@@ -294,10 +294,10 @@ export const AppointmentManagement: React.FC = () => {
         <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
-              <CalendarDays className="w-4 h-4 text-sky-600" />
+              <CalendarDays className="w-4 h-4 text-emerald-600" />
               <span>Interactive Calendar ({calendarView.toUpperCase()} VIEW) • September 2026</span>
             </h3>
-            <span className="text-xs text-sky-600 font-semibold">Disha Tarabai Park Schedule</span>
+            <span className="text-xs text-emerald-600 font-semibold">Disha Tarabai Park Schedule</span>
           </div>
 
           <div className="grid grid-cols-7 gap-2 text-center text-xs font-semibold text-slate-500 py-2 border-b border-slate-100">
@@ -312,15 +312,15 @@ export const AppointmentManagement: React.FC = () => {
 
           <div className="grid grid-cols-7 gap-2 min-h-[300px] text-xs">
             {/* Monday 21 (Today) */}
-            <div className="p-2 bg-sky-50/70 border border-sky-200 rounded-xl space-y-2">
-              <div className="font-bold text-sky-900 text-center border-b border-sky-200/60 pb-1">
+            <div className="p-2 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2">
+              <div className="font-bold text-emerald-900 text-center border-b border-emerald-200/60 pb-1">
                 Today (6 Apt)
               </div>
 
               {appointments.map(apt => (
-                <div key={apt.id} className="p-2 bg-white rounded-lg border border-sky-200 shadow-2xs space-y-1 text-[11px]">
+                <div key={apt.id} className="p-2 bg-white rounded-lg border border-emerald-200 shadow-2xs space-y-1 text-[11px]">
                   <div className="font-bold text-slate-900 truncate">{apt.patientName}</div>
-                  <div className="text-sky-700 font-medium truncate">{apt.testName}</div>
+                  <div className="text-emerald-700 font-medium truncate">{apt.testName}</div>
                   <div className="text-slate-500 font-mono text-[10px]">{apt.timeSlot}</div>
                 </div>
               ))}
@@ -353,7 +353,7 @@ export const AppointmentManagement: React.FC = () => {
                   placeholder="e.g. Ramesh Patil"
                   value={patientName}
                   onChange={e => setPatientName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
@@ -365,7 +365,7 @@ export const AppointmentManagement: React.FC = () => {
                   placeholder="+91 98220 12345"
                   value={phone}
                   onChange={e => setPhone(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
@@ -376,7 +376,7 @@ export const AppointmentManagement: React.FC = () => {
                   required
                   value={testName}
                   onChange={e => setTestName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
@@ -387,7 +387,7 @@ export const AppointmentManagement: React.FC = () => {
                     type="text"
                     value={timeSlot}
                     onChange={e => setTimeSlot(e.target.value)}
-                    className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-sky-500"
+                    className="w-full p-2.5 border border-slate-300 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500"
                   />
                 </div>
                 <div>
@@ -413,7 +413,7 @@ export const AppointmentManagement: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl shadow-md"
+                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl shadow-md"
                 >
                   Create Appointment
                 </button>
@@ -436,7 +436,7 @@ export const AppointmentManagement: React.FC = () => {
                 <select
                   value={timeSlot}
                   onChange={e => setTimeSlot(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl bg-white outline-none focus:ring-2 focus:ring-emerald-500"
                 >
                   <option value="09:00 AM">09:00 AM</option>
                   <option value="11:30 AM">11:30 AM</option>
@@ -455,7 +455,7 @@ export const AppointmentManagement: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl shadow-md"
+                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl shadow-md"
                 >
                   Save New Time
                 </button>

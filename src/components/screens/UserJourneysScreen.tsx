@@ -13,7 +13,7 @@ export const UserJourneysScreen: React.FC = () => {
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <Compass className="w-5 h-5 text-sky-600" />
+            <Compass className="w-5 h-5 text-emerald-600" />
             <h2 className="text-xl font-bold text-slate-900">Role-to-Screen Guided User Journeys</h2>
           </div>
           <p className="text-slate-500 text-xs mt-0.5">
@@ -35,12 +35,12 @@ export const UserJourneysScreen: React.FC = () => {
             <div 
               key={j.role}
               className={`bg-white p-6 rounded-2xl border shadow-xs transition-all flex flex-col justify-between space-y-4 ${
-                isCurrentActive ? 'border-amber-400 ring-2 ring-amber-300 shadow-md' : 'border-slate-200 hover:border-sky-300'
+                isCurrentActive ? 'border-amber-400 ring-2 ring-amber-300 shadow-md' : 'border-slate-200 hover:border-emerald-300'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-200">
+                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">
                     {j.role.replace('_', ' ')}
                   </span>
                   {isCurrentActive && (
@@ -72,7 +72,7 @@ export const UserJourneysScreen: React.FC = () => {
               {/* Start Walkthrough Button */}
               <button
                 onClick={() => startJourney(j.role)}
-                className="w-full py-2.5 bg-gradient-to-r from-sky-600 to-teal-600 hover:from-sky-500 hover:to-teal-500 text-white font-bold rounded-xl text-xs shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all"
+                className="w-full py-2.5 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white font-bold rounded-xl text-xs shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2 transition-all"
               >
                 <Play className="w-3.5 h-3.5 fill-white" />
                 <span>Launch {j.title.split(' ')[0]} Journey</span>

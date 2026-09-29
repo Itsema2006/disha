@@ -58,7 +58,7 @@ export const WhatsappAutomationDashboard: React.FC = () => {
   return (
     <div className="space-y-6 animate-fadeIn">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-6 rounded-2xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-gradient-to-r from-emerald-900 via-cyan-900 to-slate-900 text-white p-6 rounded-2xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold mb-2 border border-emerald-500/30">
             <MessageSquare className="w-3.5 h-3.5" />
@@ -92,7 +92,7 @@ export const WhatsappAutomationDashboard: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Delivery Rate</span>
-            <CheckCheck className="w-4 h-4 text-sky-600" />
+            <CheckCheck className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">99.2%</div>
           <div className="mt-1 text-[10px] text-slate-400">Meta API Live Status</div>
@@ -119,10 +119,10 @@ export const WhatsappAutomationDashboard: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Follow-up Messages</span>
-            <MessageSquare className="w-4 h-4 text-teal-600" />
+            <MessageSquare className="w-4 h-4 text-cyan-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">21</div>
-          <div className="mt-1 text-[10px] text-teal-600 font-medium">Post-visit feedback</div>
+          <div className="mt-1 text-[10px] text-cyan-600 font-medium">Post-visit feedback</div>
         </div>
       </div>
 
@@ -236,7 +236,7 @@ export const WhatsappAutomationDashboard: React.FC = () => {
                 <span>📱 WhatsApp Preview</span>
                 <span>Disha Diagnostic Verified ✓</span>
               </div>
-              <div className="p-3 bg-teal-900/90 rounded-xl text-[11px] leading-relaxed text-emerald-50 font-sans border border-teal-700">
+              <div className="p-3 bg-cyan-900/90 rounded-xl text-[11px] leading-relaxed text-emerald-50 font-sans border border-cyan-700">
                 {testMessage}
                 <div className="mt-1 text-[9px] text-emerald-300 text-right">11:42 AM ✓✓</div>
               </div>

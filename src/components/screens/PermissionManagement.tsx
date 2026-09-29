@@ -19,7 +19,7 @@ export const PermissionManagement: React.FC = () => {
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <UserCheck className="w-5 h-5 text-sky-600" />
+            <UserCheck className="w-5 h-5 text-emerald-600" />
             <h2 className="text-xl font-bold text-slate-900">Staff & Permission Management</h2>
           </div>
           <p className="text-slate-500 text-xs mt-0.5">
@@ -29,7 +29,7 @@ export const PermissionManagement: React.FC = () => {
 
         <button 
           onClick={() => showToast('Opened Add Staff Member Modal')}
-          className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-sky-600/20"
+          className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md shadow-emerald-600/20"
         >
           <Plus className="w-4 h-4" />
           <span>Add Staff Member</span>
@@ -68,14 +68,14 @@ export const PermissionManagement: React.FC = () => {
               {filteredStaff.map(staff => (
                 <tr key={staff.id} className="hover:bg-slate-50 transition-colors">
                   <td className="p-3 flex items-center gap-3">
-                    <img src={staff.avatar} alt={staff.name} className="w-8 h-8 rounded-full object-cover border border-sky-200" />
+                    <img src={staff.avatar} alt={staff.name} className="w-8 h-8 rounded-full object-cover border border-emerald-200" />
                     <div>
                       <div className="font-bold text-slate-900">{staff.name}</div>
                       <div className="text-[10px] text-slate-400 font-normal">{staff.email}</div>
                     </div>
                   </td>
                   <td className="p-3">
-                    <span className="px-2 py-0.5 rounded bg-sky-100 text-sky-800 font-semibold text-[10px]">
+                    <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold text-[10px]">
                       {staff.roleTitle}
                     </span>
                   </td>
@@ -89,7 +89,7 @@ export const PermissionManagement: React.FC = () => {
                   <td className="p-3 text-right space-x-2">
                     <button 
                       onClick={() => showToast(`Editing permissions for ${staff.name}`)}
-                      className="text-sky-600 hover:underline font-semibold"
+                      className="text-emerald-600 hover:underline font-semibold"
                     >
                       Edit Role
                     </button>

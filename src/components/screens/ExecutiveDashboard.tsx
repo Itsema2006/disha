@@ -91,18 +91,18 @@ export const ExecutiveDashboard: React.FC = () => {
   return (
     <div className="space-y-6 animate-fadeIn">
       {/* Header Banner & Quick Actions */}
-      <div className="bg-gradient-to-r from-sky-900 via-sky-800 to-teal-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
+      <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-cyan-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
         <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-white/5 backdrop-blur-3xl -skew-x-12 transform translate-x-12"></div>
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-medium mb-2 border border-white/10">
-              <Activity className="w-3.5 h-3.5 text-teal-300" />
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 text-emerald-200 text-xs font-medium mb-2 border border-white/10">
+              <Activity className="w-3.5 h-3.5 text-cyan-300" />
               <span>Kolhapur Diagnostic Centre Operations • Live</span>
             </div>
             <h2 className="text-2xl font-bold tracking-tight text-white">
               {currentRole === 'owner' ? 'Executive Management Overview' : 'Clinic Operations Dashboard'}
             </h2>
-            <p className="text-sky-200 text-xs mt-1">
+            <p className="text-emerald-200 text-xs mt-1">
               Real-time monitoring for AI voice calls, WhatsApp bookings, lab reports & patient analytics.
             </p>
           </div>
@@ -110,7 +110,7 @@ export const ExecutiveDashboard: React.FC = () => {
           <div className="flex items-center gap-2 flex-wrap">
             <button
               onClick={() => setShowAddAptModal(true)}
-              className="px-3.5 py-2 bg-sky-500 hover:bg-sky-400 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md shadow-sky-600/30 transition-all"
+              className="px-3.5 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md shadow-emerald-600/30 transition-all"
             >
               <Plus className="w-4 h-4" />
               <span>Book Appointment</span>
@@ -118,7 +118,7 @@ export const ExecutiveDashboard: React.FC = () => {
 
             <button
               onClick={() => setShowAddPatientModal(true)}
-              className="px-3.5 py-2 bg-teal-600 hover:bg-teal-500 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md transition-all"
+              className="px-3.5 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-md transition-all"
             >
               <Users className="w-4 h-4" />
               <span>Add Patient</span>
@@ -147,10 +147,10 @@ export const ExecutiveDashboard: React.FC = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         
         {/* Appointments Today */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-sky-300 transition-all cursor-pointer" onClick={() => setActiveModule('appointments')}>
+        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('appointments')}>
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Appointments Today</span>
-            <Calendar className="w-4 h-4 text-sky-600" />
+            <Calendar className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">{totalAppointments}</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium flex items-center gap-1">
@@ -200,23 +200,23 @@ export const ExecutiveDashboard: React.FC = () => {
         </div>
 
         {/* Reports Delivered */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-teal-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
+        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-cyan-300 transition-all cursor-pointer" onClick={() => setActiveModule('reports')}>
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Reports Delivered</span>
-            <FileText className="w-4 h-4 text-teal-600" />
+            <FileText className="w-4 h-4 text-cyan-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">{reportsDelivered}</div>
           <div className="mt-1 text-[11px] text-emerald-600 font-medium">Via WhatsApp & Portal</div>
         </div>
 
         {/* AI Calls Handled */}
-        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-sky-300 transition-all cursor-pointer" onClick={() => setActiveModule('ai_receptionist')}>
+        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all cursor-pointer" onClick={() => setActiveModule('ai_receptionist')}>
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>AI Calls Handled</span>
-            <PhoneCall className="w-4 h-4 text-sky-600" />
+            <PhoneCall className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">{totalCalls}</div>
-          <div className="mt-1 text-[11px] text-sky-600 font-medium">{aiEfficiencyRate}% Resolution Rate</div>
+          <div className="mt-1 text-[11px] text-emerald-600 font-medium">{aiEfficiencyRate}% Resolution Rate</div>
         </div>
 
         {/* WhatsApp Conversations */}
@@ -232,7 +232,7 @@ export const ExecutiveDashboard: React.FC = () => {
         {/* Revenue Summary (Role Guarded) */}
         <div className="col-span-2 bg-gradient-to-tr from-slate-900 to-slate-800 text-white p-4 rounded-xl shadow-md border border-slate-700 flex items-center justify-between">
           <div>
-            <div className="flex items-center gap-1 text-xs text-sky-400 font-semibold">
+            <div className="flex items-center gap-1 text-xs text-emerald-400 font-semibold">
               <IndianRupee className="w-3.5 h-3.5" />
               <span>Today's Total Collections</span>
             </div>
@@ -249,7 +249,7 @@ export const ExecutiveDashboard: React.FC = () => {
           </div>
           <button
             onClick={() => setActiveModule('analytics')}
-            className="p-2 bg-sky-600 hover:bg-sky-500 rounded-lg text-white transition-all text-xs flex items-center gap-1"
+            className="p-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-white transition-all text-xs flex items-center gap-1"
           >
             <span>Analytics</span>
             <ChevronRight className="w-4 h-4" />
@@ -269,12 +269,12 @@ export const ExecutiveDashboard: React.FC = () => {
               <p className="text-slate-500 text-xs">Hourly distribution of patient arrivals and AI voice bookings today in Kolhapur.</p>
             </div>
             <div className="flex items-center gap-3 text-xs">
-              <span className="flex items-center gap-1.5 font-medium text-sky-700">
-                <span className="w-3 h-3 rounded-full bg-sky-600"></span>
+              <span className="flex items-center gap-1.5 font-medium text-emerald-700">
+                <span className="w-3 h-3 rounded-full bg-emerald-600"></span>
                 Completed
               </span>
-              <span className="flex items-center gap-1.5 font-medium text-teal-700">
-                <span className="w-3 h-3 rounded-full bg-teal-500"></span>
+              <span className="flex items-center gap-1.5 font-medium text-cyan-700">
+                <span className="w-3 h-3 rounded-full bg-cyan-500"></span>
                 AI Voice Booked
               </span>
             </div>
@@ -357,12 +357,12 @@ export const ExecutiveDashboard: React.FC = () => {
               <span className="font-bold text-slate-900 text-sm">84</span>
             </div>
 
-            <div className="p-3 bg-sky-50/70 rounded-xl border border-sky-100 flex items-center justify-between">
+            <div className="p-3 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center justify-between">
               <div>
-                <div className="font-semibold text-sky-900">AI Handled (Automated)</div>
-                <div className="text-[11px] text-sky-700">74 appointments & info</div>
+                <div className="font-semibold text-emerald-900">AI Handled (Automated)</div>
+                <div className="text-[11px] text-emerald-700">74 appointments & info</div>
               </div>
-              <span className="font-bold text-sky-900 text-sm">88%</span>
+              <span className="font-bold text-emerald-900 text-sm">88%</span>
             </div>
 
             <div className="p-3 bg-amber-50/70 rounded-xl border border-amber-100 flex items-center justify-between">
@@ -378,7 +378,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 onClick={() => setActiveModule('ai_receptionist')}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-1.5"
               >
-                <PhoneCall className="w-3.5 h-3.5 text-sky-400" />
+                <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Open Dedicated AI Calling Page</span>
               </button>
             </div>
@@ -399,7 +399,7 @@ export const ExecutiveDashboard: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveModule('appointments')}
-              className="text-xs text-sky-600 font-semibold hover:underline flex items-center gap-1"
+              className="text-xs text-emerald-600 font-semibold hover:underline flex items-center gap-1"
             >
               <span>View All</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -435,7 +435,7 @@ export const ExecutiveDashboard: React.FC = () => {
                     <td className="p-3">
                       <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-bold ${
                         apt.status === 'Completed' ? 'bg-emerald-100 text-emerald-800' :
-                        apt.status === 'Confirmed' ? 'bg-sky-100 text-sky-800' :
+                        apt.status === 'Confirmed' ? 'bg-emerald-100 text-emerald-800' :
                         apt.status === 'Pending' ? 'bg-amber-100 text-amber-800' :
                         'bg-rose-100 text-rose-800'
                       }`}>
@@ -445,7 +445,7 @@ export const ExecutiveDashboard: React.FC = () => {
                     <td className="p-3 text-right">
                       <button
                         onClick={() => setActiveModule('patients')}
-                        className="text-sky-600 hover:text-sky-800 text-[11px] font-semibold"
+                        className="text-emerald-600 hover:text-emerald-800 text-[11px] font-semibold"
                       >
                         View Profile
                       </button>
@@ -477,7 +477,7 @@ export const ExecutiveDashboard: React.FC = () => {
             </div>
 
             <div className="flex gap-3 items-start">
-              <div className="w-7 h-7 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 AI
               </div>
               <div>
@@ -518,7 +518,7 @@ export const ExecutiveDashboard: React.FC = () => {
                   placeholder="e.g. Ramesh Kadam"
                   value={newPatientName}
                   onChange={e => setNewPatientName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
@@ -530,7 +530,7 @@ export const ExecutiveDashboard: React.FC = () => {
                   placeholder="+91 98220 12345"
                   value={newPhone}
                   onChange={e => setNewPhone(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
@@ -539,7 +539,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 <select
                   value={newTestName}
                   onChange={e => setNewTestName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none bg-white"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none bg-white"
                 >
                   <option value="CBC + Fasting Glucose">CBC + Fasting Glucose (₹1,450)</option>
                   <option value="Comprehensive Lipid Profile">Comprehensive Lipid Profile (₹1,200)</option>
@@ -558,7 +558,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl shadow-md"
+                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl shadow-md"
                 >
                   Confirm & Send WhatsApp
                 </button>
@@ -584,7 +584,7 @@ export const ExecutiveDashboard: React.FC = () => {
                   placeholder="e.g. Swati Pawar"
                   value={newPatientName}
                   onChange={e => setNewPatientName(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
@@ -596,7 +596,7 @@ export const ExecutiveDashboard: React.FC = () => {
                   placeholder="+91 98220 99887"
                   value={newPhone}
                   onChange={e => setNewPhone(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none"
+                  className="w-full p-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"
                 />
               </div>
 
@@ -610,7 +610,7 @@ export const ExecutiveDashboard: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-xl shadow-md"
+                  className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-xl shadow-md"
                 >
                   Register Patient
                 </button>

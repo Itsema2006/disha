@@ -48,7 +48,7 @@ export const AnalyticsDashboard: React.FC = () => {
               key={p}
               onClick={() => setPeriod(p)}
               className={`px-3 py-1.5 rounded-lg font-semibold uppercase text-[10px] tracking-wider transition-all ${
-                period === p ? 'bg-sky-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                period === p ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
               {p}
@@ -63,7 +63,7 @@ export const AnalyticsDashboard: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Appointments</span>
-            <Calendar className="w-4 h-4 text-sky-600" />
+            <Calendar className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">1,480</div>
           <div className="mt-1 text-[10px] text-emerald-600 font-medium flex items-center gap-1">
@@ -75,10 +75,10 @@ export const AnalyticsDashboard: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>Patient Growth</span>
-            <Users className="w-4 h-4 text-teal-600" />
+            <Users className="w-4 h-4 text-cyan-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">+24%</div>
-          <div className="mt-1 text-[10px] text-teal-600 font-medium">New patient registration</div>
+          <div className="mt-1 text-[10px] text-cyan-600 font-medium">New patient registration</div>
         </div>
 
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
@@ -108,10 +108,10 @@ export const AnalyticsDashboard: React.FC = () => {
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <span>AI Voice Call Handling</span>
-            <PhoneCall className="w-4 h-4 text-sky-600" />
+            <PhoneCall className="w-4 h-4 text-emerald-600" />
           </div>
           <div className="mt-2 text-2xl font-bold text-slate-900">88.0%</div>
-          <div className="mt-1 text-[10px] text-sky-600 font-medium">Automated resolution</div>
+          <div className="mt-1 text-[10px] text-emerald-600 font-medium">Automated resolution</div>
         </div>
 
         <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
@@ -167,7 +167,7 @@ export const AnalyticsDashboard: React.FC = () => {
                 </div>
                 <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden flex">
                   <div 
-                    className="bg-gradient-to-r from-sky-600 to-teal-500 rounded-full" 
+                    className="bg-gradient-to-r from-emerald-600 to-cyan-500 rounded-full" 
                     style={{ width: test.share }}
                   ></div>
                 </div>
@@ -189,7 +189,7 @@ export const AnalyticsDashboard: React.FC = () => {
                 <div className="font-semibold text-slate-800">1. Sample Collection</div>
                 <div className="text-[11px] text-slate-500">Reception & phlebotomy</div>
               </div>
-              <span className="font-bold text-sky-700">15 Mins</span>
+              <span className="font-bold text-emerald-700">15 Mins</span>
             </div>
 
             <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
@@ -197,7 +197,7 @@ export const AnalyticsDashboard: React.FC = () => {
                 <div className="font-semibold text-slate-800">2. Lab Test Processing</div>
                 <div className="text-[11px] text-slate-500">Haematology / Biochemistry analyzer</div>
               </div>
-              <span className="font-bold text-teal-700">1.8 Hours</span>
+              <span className="font-bold text-cyan-700">1.8 Hours</span>
             </div>
 
             <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">

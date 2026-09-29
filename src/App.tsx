@@ -57,7 +57,7 @@ const MainLayout: React.FC = () => {
               setShowLanding(true);
               setShowLoginScreen(false);
             }}
-            className="flex items-center gap-1.5 text-sky-400 hover:text-white font-semibold transition-colors"
+            className="flex items-center gap-1.5 text-emerald-400 hover:text-white font-semibold transition-colors"
           >
             <Home className="w-4 h-4" />
             <span>← Back to Disha Landing Screen</span>
@@ -119,7 +119,7 @@ const MainLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-sky-100 selection:text-sky-900">
+    <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
       <RoleSwitcherBanner />
       <Header />
       <div className="flex-1 flex overflow-hidden">
