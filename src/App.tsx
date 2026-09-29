@@ -67,6 +67,7 @@ const MainLayout: React.FC = () => {
         </div>
 
         <LoginScreen />
+        <Footer theme="dark" className="border-t border-gray-800" />
       </div>
     );
   }
