@@ -90,21 +90,50 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({ onGetConnected }) 
           {/* Navigation Links */}
           <div className="hidden lg:flex items-center gap-7 text-xs font-semibold text-gray-600">
             <a href="#home" className="text-emerald-700 font-bold border-b-2 border-emerald-600 pb-0.5">Home</a>
-            <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
-              <span>About Us</span>
-              <ChevronDown className="w-3 h-3 text-gray-400" />
+            
+            <div className="relative group cursor-pointer py-4">
+              <div className="flex items-center gap-1 hover:text-emerald-700 transition-colors">
+                <span>About Us</span>
+                <ChevronDown className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" />
+              </div>
+              {/* Dropdown */}
+              <div className="absolute top-[80%] left-0 w-48 bg-white border border-gray-100 shadow-xl rounded-xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0 z-50">
+                <a href="#mission" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Our Mission</a>
+                <a href="#facilities" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Facilities</a>
+                <a href="#awards" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Accreditations</a>
+              </div>
             </div>
-            <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
-              <span>Pathologists & Doctors</span>
-              <ChevronDown className="w-3 h-3 text-gray-400" />
+
+            <div className="relative group cursor-pointer py-4">
+              <div className="flex items-center gap-1 hover:text-emerald-700 transition-colors">
+                <span>Pathologists & Doctors</span>
+                <ChevronDown className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" />
+              </div>
+              {/* Dropdown */}
+              <div className="absolute top-[80%] left-0 w-56 bg-white border border-gray-100 shadow-xl rounded-xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0 z-50">
+                <a href="#dr-sharma" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Dr. Sharma (Head Pathologist)</a>
+                <a href="#dr-patil" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Dr. Patil (Radiologist)</a>
+                <a href="#team" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">View All Specialists</a>
+              </div>
             </div>
-            <a href="#services" className="hover:text-emerald-700 transition-colors">Departments</a>
-            <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-700 transition-colors">
-              <span>AI Voice & WhatsApp</span>
-              <ChevronDown className="w-3 h-3 text-gray-400" />
+
+            <a href="#services" className="hover:text-emerald-700 transition-colors py-4">Departments</a>
+            
+            <div className="relative group cursor-pointer py-4">
+              <div className="flex items-center gap-1 hover:text-emerald-700 transition-colors">
+                <span>AI Voice & WhatsApp</span>
+                <ChevronDown className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" />
+              </div>
+              {/* Dropdown */}
+              <div className="absolute top-[80%] left-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0 z-50">
+                <a href="#ai-demo" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">Try AI Receptionist Demo</a>
+                <a href="#whatsapp-bot" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">WhatsApp Report Fetching</a>
+                <a href="#automation" className="block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 rounded-lg transition-colors">How Automation Works</a>
+              </div>
             </div>
-            <a href="#packages" className="hover:text-emerald-700 transition-colors">Health Packages</a>
-            <a href="#contact" className="hover:text-emerald-700 transition-colors">Contact Us</a>
+
+            <a href="#packages" className="hover:text-emerald-700 transition-colors py-4">Health Packages</a>
+            <a href="#contact" className="hover:text-emerald-700 transition-colors py-4">Contact Us</a>
           </div>
 
           {/* Schedule Appointment / Get Connected Button */}
