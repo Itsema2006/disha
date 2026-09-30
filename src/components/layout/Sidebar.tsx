@@ -21,7 +21,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 
-export const Sidebar: React.FC = () => {
+export const Sidebar: React.FC<{ isOpen?: boolean; onClose?: () => void }> = ({ isOpen = false, onClose }) => {
   const { activeModule, setActiveModule, currentRole, checkPermission } = useApp();
 
   interface NavItem {
@@ -49,7 +49,16 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
-    <aside className="w-64 bg-gray-900 text-gray-300 min-h-[calc(100vh-4rem)] flex flex-col border-r border-gray-800 shrink-0 select-none">
+    <>
+      {isOpen && (
+        <button
+          type="button"
+          onClick={onClose}
+          className="md:hidden fixed inset-0 bg-gray-950/60 z-40"
+          aria-label="Close navigation menu"
+        />
+      )}
+      <aside className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 fixed md:static inset-y-0 left-0 z-50 md:z-auto w-72 md:w-64 bg-gray-900 text-gray-300 min-h-screen md:min-h-[calc(100vh-4rem)] flex flex-col border-r border-gray-800 shrink-0 select-none transition-transform duration-200 ease-out`}>
       <div className="p-4 border-b border-gray-800/80">
         <div className="text-[10px] uppercase font-bold text-emerald-400 tracking-wider">
           Logged-In Staff Role
@@ -74,7 +83,7 @@ export const Sidebar: React.FC = () => {
           return (
             <button
               key={item.key}
-              onClick={() => setActiveModule(item.key)}
+              onClick={() => { setActiveModule(item.key); onClose?.(); }}
               className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-medium transition-all group ${
                 isActive
                   ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/20 font-semibold'
@@ -112,6 +121,7 @@ export const Sidebar: React.FC = () => {
           🟢 Production Demo
         </div>
       </div>
-    </aside>
+      </aside>
+    </>
   );
 };

@@ -97,7 +97,7 @@ export const AppointmentManagement: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           {/* View Mode Toggle */}
           <div className="bg-gray-100 p-1 rounded-xl flex items-center gap-1 border border-gray-200">
             <button
